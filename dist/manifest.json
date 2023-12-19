@@ -1,0 +1,28 @@
+{
+  "name": "DaaS for Chrome",
+  "description": "A software engineer's guide to business words and abbreviations. Previously known as Antonium",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "512": "antonium-logo.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "*://stackoverflow.com/questions/*",
+    "*://confluence.eng.nimblestorage.com/*",
+    "*://rndwiki-pro.its.hpecorp.net/*",
+    "http://127.0.0.1:8080/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "declarativeContent",
+    "scripting",
+    "storage"
+  ]
+}
