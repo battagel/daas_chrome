@@ -32,10 +32,13 @@ class Collector {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const response = yield fetch(this.api_url, {
-                    method: "GET",
-                    mode: "cors",
-                    credentials: "include",
+                    method: 'GET',
+                    mode: 'cors',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
                 });
+                console.log(response);
                 const list_of_json_phrases = yield response.json();
                 // Create a new instance of PhraseModel and insert the list of PhraseItems
                 const phraseModel = new _data_datamodel__WEBPACK_IMPORTED_MODULE_0__.PhraseModel();
@@ -119,8 +122,6 @@ class PhraseModel {
                 return;
             }
         }
-        console.log("Found phrase: " + result.phrase);
-        console.log("with explanations " + result.explanations);
         return result;
     }
     getDataMap() {
@@ -239,9 +240,22 @@ class HTMLEditor {
             number_explanations +
             " potential meaning(s)";
         for (const explanation of phrase_item.explanations) {
-            // Add definitions, then add links
+            // Add definitions, authoor and references
             if (explanation.definition) {
                 tooltip_text += "<hr>" + explanation.definition + "<br>";
+            }
+            if (explanation.author) {
+                tooltip_text += "<i>Author: " + explanation.author + "</i><br>";
+            }
+            if (explanation.tags) {
+                for (var i = 0; i < explanation.tags.length; i++) {
+                    explanation.tags[i] = "<code>" + explanation.tags[i] + "</code>";
+                }
+            }
+            if (explanation.code) {
+                for (var i = 0; i < explanation.code.length; i++) {
+                    explanation.code[i] = "<code>" + explanation.code[i] + "</code>";
+                }
             }
             var formatted_links = "<ul>";
             for (var j = 0; j < explanation.references.length; j++) {
@@ -250,6 +264,7 @@ class HTMLEditor {
             formatted_links += "</ul>";
             tooltip_text += formatted_links + "";
         }
+        tooltip_text += "</span>";
         return ("<div class='tooltip'>" + original_word + tooltip_text + "</div>");
     }
     capitalizeWords(word) {
@@ -458,7 +473,7 @@ __webpack_require__.r(__webpack_exports__);
  *
  * By David Fahlander, david.fahlander@gmail.com
  *
- * Version 3.2.3, Mon Jan 23 2023
+ * Version 3.2.7, Wed Mar 20 2024
  *
  * https://dexie.org
  *
@@ -552,7 +567,7 @@ function tryCatch(fn, onerror, args) {
     }
 }
 function getByKeyPath(obj, keyPath) {
-    if (hasOwn(obj, keyPath))
+    if (typeof keyPath === 'string' && hasOwn(obj, keyPath))
         return obj[keyPath];
     if (!keyPath)
         return obj;
@@ -567,7 +582,7 @@ function getByKeyPath(obj, keyPath) {
     var period = keyPath.indexOf('.');
     if (period !== -1) {
         var innerObj = obj[keyPath.substr(0, period)];
-        return innerObj === undefined ? undefined : getByKeyPath(innerObj, keyPath.substr(period + 1));
+        return innerObj == null ? undefined : getByKeyPath(innerObj, keyPath.substr(period + 1));
     }
     return undefined;
 }
@@ -635,7 +650,7 @@ const concat = [].concat;
 function flatten(a) {
     return concat.apply([], a);
 }
-const intrinsicTypeNames = "Boolean,String,Date,RegExp,Blob,File,FileList,FileSystemFileHandle,ArrayBuffer,DataView,Uint8ClampedArray,ImageBitmap,ImageData,Map,Set,CryptoKey"
+const intrinsicTypeNames = "BigUint64Array,BigInt64Array,Array,Boolean,String,Date,RegExp,Blob,File,FileList,FileSystemFileHandle,FileSystemDirectoryHandle,ArrayBuffer,DataView,Uint8ClampedArray,ImageBitmap,ImageData,Map,Set,CryptoKey"
     .split(',').concat(flatten([8, 16, 32, 64].map(num => ["Int", "Uint", "Float"].map(t => t + num + "Array")))).filter(t => _global[t]);
 const intrinsicTypes = intrinsicTypeNames.map(t => _global[t]);
 arrayToObject(intrinsicTypeNames, x => [x, true]);
@@ -1696,7 +1711,7 @@ function tempTransaction(db, mode, storeNames, fn) {
     }
 }
 
-const DEXIE_VERSION = '3.2.3';
+const DEXIE_VERSION = '3.2.7';
 const maxString = String.fromCharCode(65535);
 const minKey = -Infinity;
 const INVALID_KEY_ARGUMENT = "Invalid key provided. Keys must be of type string, number, Date or Array<string | number | Date>.";
@@ -1778,13 +1793,23 @@ class Table {
             return this
                 .where(keyPaths[0])
                 .equals(indexOrCrit[keyPaths[0]]);
-        const compoundIndex = this.schema.indexes.concat(this.schema.primKey).filter(ix => ix.compound &&
-            keyPaths.every(keyPath => ix.keyPath.indexOf(keyPath) >= 0) &&
-            ix.keyPath.every(keyPath => keyPaths.indexOf(keyPath) >= 0))[0];
-        if (compoundIndex && this.db._maxKey !== maxString)
+        const compoundIndex = this.schema.indexes.concat(this.schema.primKey).filter(ix => {
+            if (ix.compound &&
+                keyPaths.every(keyPath => ix.keyPath.indexOf(keyPath) >= 0)) {
+                for (let i = 0; i < keyPaths.length; ++i) {
+                    if (keyPaths.indexOf(ix.keyPath[i]) === -1)
+                        return false;
+                }
+                return true;
+            }
+            return false;
+        }).sort((a, b) => a.keyPath.length - b.keyPath.length)[0];
+        if (compoundIndex && this.db._maxKey !== maxString) {
+            const keyPathsInValidOrder = compoundIndex.keyPath.slice(0, keyPaths.length);
             return this
-                .where(compoundIndex.name)
-                .equals(compoundIndex.keyPath.map(kp => indexOrCrit[kp]));
+                .where(keyPathsInValidOrder)
+                .equals(keyPathsInValidOrder.map(kp => indexOrCrit[kp]));
+        }
         if (!compoundIndex && debug)
             console.warn(`The query ${JSON.stringify(indexOrCrit)} on ${this.name} would benefit of a ` +
                 `compound index [${keyPaths.join('+')}]`);
@@ -4067,69 +4092,82 @@ function dexieOpen(db) {
     }
     let resolveDbReady = state.dbReadyResolve,
     upgradeTransaction = null, wasCreated = false;
-    return DexiePromise.race([openCanceller, (typeof navigator === 'undefined' ? DexiePromise.resolve() : idbReady()).then(() => new DexiePromise((resolve, reject) => {
-            throwIfCancelled();
-            if (!indexedDB)
-                throw new exceptions.MissingAPI();
-            const dbName = db.name;
-            const req = state.autoSchema ?
-                indexedDB.open(dbName) :
-                indexedDB.open(dbName, Math.round(db.verno * 10));
-            if (!req)
-                throw new exceptions.MissingAPI();
-            req.onerror = eventRejectHandler(reject);
-            req.onblocked = wrap(db._fireOnBlocked);
-            req.onupgradeneeded = wrap(e => {
-                upgradeTransaction = req.transaction;
-                if (state.autoSchema && !db._options.allowEmptyDB) {
-                    req.onerror = preventDefault;
-                    upgradeTransaction.abort();
-                    req.result.close();
-                    const delreq = indexedDB.deleteDatabase(dbName);
-                    delreq.onsuccess = delreq.onerror = wrap(() => {
-                        reject(new exceptions.NoSuchDatabase(`Database ${dbName} doesnt exist`));
-                    });
-                }
-                else {
-                    upgradeTransaction.onerror = eventRejectHandler(reject);
-                    var oldVer = e.oldVersion > Math.pow(2, 62) ? 0 : e.oldVersion;
-                    wasCreated = oldVer < 1;
-                    db._novip.idbdb = req.result;
-                    runUpgraders(db, oldVer / 10, upgradeTransaction, reject);
-                }
-            }, reject);
-            req.onsuccess = wrap(() => {
-                upgradeTransaction = null;
-                const idbdb = db._novip.idbdb = req.result;
-                const objectStoreNames = slice(idbdb.objectStoreNames);
-                if (objectStoreNames.length > 0)
-                    try {
-                        const tmpTrans = idbdb.transaction(safariMultiStoreFix(objectStoreNames), 'readonly');
-                        if (state.autoSchema)
-                            readGlobalSchema(db, idbdb, tmpTrans);
-                        else {
-                            adjustToExistingIndexNames(db, db._dbSchema, tmpTrans);
-                            if (!verifyInstalledSchema(db, tmpTrans)) {
-                                console.warn(`Dexie SchemaDiff: Schema was extended without increasing the number passed to db.version(). Some queries may fail.`);
-                            }
+    const tryOpenDB = () => new DexiePromise((resolve, reject) => {
+        throwIfCancelled();
+        if (!indexedDB)
+            throw new exceptions.MissingAPI();
+        const dbName = db.name;
+        const req = state.autoSchema ?
+            indexedDB.open(dbName) :
+            indexedDB.open(dbName, Math.round(db.verno * 10));
+        if (!req)
+            throw new exceptions.MissingAPI();
+        req.onerror = eventRejectHandler(reject);
+        req.onblocked = wrap(db._fireOnBlocked);
+        req.onupgradeneeded = wrap(e => {
+            upgradeTransaction = req.transaction;
+            if (state.autoSchema && !db._options.allowEmptyDB) {
+                req.onerror = preventDefault;
+                upgradeTransaction.abort();
+                req.result.close();
+                const delreq = indexedDB.deleteDatabase(dbName);
+                delreq.onsuccess = delreq.onerror = wrap(() => {
+                    reject(new exceptions.NoSuchDatabase(`Database ${dbName} doesnt exist`));
+                });
+            }
+            else {
+                upgradeTransaction.onerror = eventRejectHandler(reject);
+                var oldVer = e.oldVersion > Math.pow(2, 62) ? 0 : e.oldVersion;
+                wasCreated = oldVer < 1;
+                db._novip.idbdb = req.result;
+                runUpgraders(db, oldVer / 10, upgradeTransaction, reject);
+            }
+        }, reject);
+        req.onsuccess = wrap(() => {
+            upgradeTransaction = null;
+            const idbdb = db._novip.idbdb = req.result;
+            const objectStoreNames = slice(idbdb.objectStoreNames);
+            if (objectStoreNames.length > 0)
+                try {
+                    const tmpTrans = idbdb.transaction(safariMultiStoreFix(objectStoreNames), 'readonly');
+                    if (state.autoSchema)
+                        readGlobalSchema(db, idbdb, tmpTrans);
+                    else {
+                        adjustToExistingIndexNames(db, db._dbSchema, tmpTrans);
+                        if (!verifyInstalledSchema(db, tmpTrans)) {
+                            console.warn(`Dexie SchemaDiff: Schema was extended without increasing the number passed to db.version(). Some queries may fail.`);
                         }
-                        generateMiddlewareStacks(db, tmpTrans);
                     }
-                    catch (e) {
-                    }
-                connections.push(db);
-                idbdb.onversionchange = wrap(ev => {
-                    state.vcFired = true;
-                    db.on("versionchange").fire(ev);
-                });
-                idbdb.onclose = wrap(ev => {
-                    db.on("close").fire(ev);
-                });
-                if (wasCreated)
-                    _onDatabaseCreated(db._deps, dbName);
-                resolve();
-            }, reject);
-        }))]).then(() => {
+                    generateMiddlewareStacks(db, tmpTrans);
+                }
+                catch (e) {
+                }
+            connections.push(db);
+            idbdb.onversionchange = wrap(ev => {
+                state.vcFired = true;
+                db.on("versionchange").fire(ev);
+            });
+            idbdb.onclose = wrap(ev => {
+                db.on("close").fire(ev);
+            });
+            if (wasCreated)
+                _onDatabaseCreated(db._deps, dbName);
+            resolve();
+        }, reject);
+    }).catch(err => {
+        if (err && err.name === 'UnknownError' && state.PR1398_maxLoop > 0) {
+            state.PR1398_maxLoop--;
+            console.warn('Dexie: Workaround for Chrome UnknownError on open()');
+            return tryOpenDB();
+        }
+        else {
+            return DexiePromise.reject(err);
+        }
+    });
+    return DexiePromise.race([
+        openCanceller,
+        (typeof navigator === 'undefined' ? DexiePromise.resolve() : idbReady()).then(tryOpenDB)
+    ]).then(() => {
         throwIfCancelled();
         state.onReadyBeingFired = [];
         return DexiePromise.resolve(vip(() => db.on.ready.fire(db.vip))).then(function fireRemainders() {
@@ -5265,7 +5303,9 @@ function extendObservabilitySet(target, newSet) {
 }
 
 function liveQuery(querier) {
-    return new Observable((observer) => {
+    let hasValue = false;
+    let currentValue = undefined;
+    const observable = new Observable((observer) => {
         const scopeFuncIsAsync = isAsyncFunction(querier);
         function execute(subscr) {
             if (scopeFuncIsAsync) {
@@ -5316,6 +5356,8 @@ function liveQuery(querier) {
             }
             querying = true;
             Promise.resolve(ret).then((result) => {
+                hasValue = true;
+                currentValue = result;
                 querying = false;
                 if (closed)
                     return;
@@ -5329,6 +5371,7 @@ function liveQuery(querier) {
                 }
             }, (err) => {
                 querying = false;
+                hasValue = false;
                 observer.error && observer.error(err);
                 subscription.unsubscribe();
             });
@@ -5336,6 +5379,9 @@ function liveQuery(querier) {
         doQuery();
         return subscription;
     });
+    observable.hasValue = () => hasValue;
+    observable.getValue = () => currentValue;
+    return observable;
 }
 
 let domDeps;
@@ -5625,7 +5671,8 @@ __webpack_require__.r(__webpack_exports__);
 // TODO: This doesnt work on Firefox
 chrome.storage.sync.get(["categories"], function (options) {
     let db = new _database_dexie__WEBPACK_IMPORTED_MODULE_0__.DexieDatabase();
-    const api_url = "http://127.0.0.1:8080/phrase";
+    // const api_url = "http://battagel-alma.buk.nimblestorage.com:8080/phrase"
+    const api_url = "https://localhost:8443/phrase";
     let collector = new _collecting_collector__WEBPACK_IMPORTED_MODULE_2__.Collector(api_url);
     const start_time = Date.now();
     // Check if DB is already populated with

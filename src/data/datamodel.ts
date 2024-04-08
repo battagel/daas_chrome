@@ -1,19 +1,24 @@
-export type PhraseItem = {
-    phrase: string;
-    terms: string[]
-    last_update: string
-    complexity: number
-    tags: string[]
-    explanations: PhraseExplanation[]
-};
-
+// When the phrase model changes change the following:
+// 1. The PhraseItem, PhraseExplanation types
+// 2. The hover display in htmleditor.ts
 type PhraseExplanation = {
     definition: string
+    author: string
     tags: string[]
     code: string[]
     references: string[]
     heat: number
 }
+
+export type PhraseItem = {
+    phrase: string;
+    terms: string[]
+    last_update: string
+    complexity: number
+    topics: string[]
+    explanations: PhraseExplanation[]
+};
+
 
 export class PhraseModel {
     private phraseMap: Map<string, PhraseItem>;

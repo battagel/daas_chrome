@@ -1,5 +1,6 @@
 import { PhraseModel } from "../data/datamodel";
 
+
 export class Collector {
     private api_url: string
     public phrase_model: PhraseModel
@@ -12,11 +13,13 @@ export class Collector {
     async collect(): Promise<PhraseModel> {
         try {
             const response = await fetch(this.api_url, {
-                method: "GET",
-                mode: "cors",
-                credentials: "include",
+                method: 'GET',
+                mode: 'cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
             });
-            const list_of_json_phrases = await response.json();
+            const list_of_json_phrases: any = await response.json();
 
             // Create a new instance of PhraseModel and insert the list of PhraseItems
             const phraseModel = new PhraseModel();

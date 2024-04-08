@@ -18,9 +18,25 @@ export class HTMLEditor {
             " potential meaning(s)";
 
         for (const explanation of phrase_item.explanations) {
-            // Add definitions, then add links
+            // Add definitions, authoor and references
             if (explanation.definition) {
                 tooltip_text += "<hr>" + explanation.definition + "<br>";
+            }
+
+            if (explanation.author) {
+                tooltip_text += "<i>Author: " + explanation.author + "</i><br>";
+            }
+
+            if (explanation.tags) {
+                for (var i = 0; i < explanation.tags.length; i++) {
+                    explanation.tags[i] = "<code>" + explanation.tags[i] + "</code>";
+                }
+            }
+
+            if (explanation.code) {
+                for (var i = 0; i < explanation.code.length; i++) {
+                    explanation.code[i] = "<code>" + explanation.code[i] + "</code>";
+                }
             }
 
             var formatted_links = "<ul>";

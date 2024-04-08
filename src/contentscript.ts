@@ -8,7 +8,8 @@ chrome.storage.sync.get(["categories"], function (options) {
 
 	let db: DexieDatabase = new DexieDatabase();
 
-	const api_url = "http://127.0.0.1:8080/phrase"
+	// const api_url = "http://battagel-alma.buk.nimblestorage.com:8080/phrase"
+	const api_url = "https://localhost:8443/phrase"
 
 	let collector: Collector = new Collector(api_url);
 

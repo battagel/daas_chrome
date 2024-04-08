@@ -725,9 +725,9 @@ var hoistNonReactStatics = (function (targetComponent, sourceComponent) {
 
 /***/ }),
 
-/***/ "./node_modules/@emotion/react/dist/emotion-element-c39617d8.browser.esm.js":
+/***/ "./node_modules/@emotion/react/dist/emotion-element-43c6fea0.browser.esm.js":
 /*!**********************************************************************************!*\
-  !*** ./node_modules/@emotion/react/dist/emotion-element-c39617d8.browser.esm.js ***!
+  !*** ./node_modules/@emotion/react/dist/emotion-element-43c6fea0.browser.esm.js ***!
   \**********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -740,7 +740,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   a: () => (/* binding */ ThemeProvider),
 /* harmony export */   b: () => (/* binding */ withTheme),
 /* harmony export */   c: () => (/* binding */ createEmotionProps),
-/* harmony export */   h: () => (/* binding */ hasOwnProperty),
+/* harmony export */   h: () => (/* binding */ hasOwn),
 /* harmony export */   i: () => (/* binding */ isBrowser),
 /* harmony export */   u: () => (/* binding */ useTheme),
 /* harmony export */   w: () => (/* binding */ withEmotionCache)
@@ -765,7 +765,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var isBrowser = "object" !== 'undefined';
-var hasOwnProperty = {}.hasOwnProperty;
+var hasOwn = {}.hasOwnProperty;
 
 var EmotionCacheContext = /* #__PURE__ */react__WEBPACK_IMPORTED_MODULE_0__.createContext( // we're doing this to avoid preconstruct's dead code elimination in this one case
 // because this module is primarily intended for the browser and node
@@ -934,7 +934,7 @@ var createEmotionProps = function createEmotionProps(type, props) {
   var newProps = {};
 
   for (var key in props) {
-    if (hasOwnProperty.call(props, key)) {
+    if (hasOwn.call(props, key)) {
       newProps[key] = props[key];
     }
   }
@@ -995,7 +995,7 @@ var Emotion = /* #__PURE__ */withEmotionCache(function (props, cache, ref) {
   var newProps = {};
 
   for (var key in props) {
-    if (hasOwnProperty.call(props, key) && key !== 'css' && key !== typePropName && ( false || key !== labelPropName)) {
+    if (hasOwn.call(props, key) && key !== 'css' && key !== typePropName && ( false || key !== labelPropName)) {
       newProps[key] = props[key];
     }
   }
@@ -1028,21 +1028,21 @@ var Emotion$1 = Emotion;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   CacheProvider: () => (/* reexport safe */ _emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.C),
+/* harmony export */   CacheProvider: () => (/* reexport safe */ _emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.C),
 /* harmony export */   ClassNames: () => (/* binding */ ClassNames),
 /* harmony export */   Global: () => (/* binding */ Global),
-/* harmony export */   ThemeContext: () => (/* reexport safe */ _emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.T),
-/* harmony export */   ThemeProvider: () => (/* reexport safe */ _emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.a),
-/* harmony export */   __unsafe_useEmotionCache: () => (/* reexport safe */ _emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__._),
+/* harmony export */   ThemeContext: () => (/* reexport safe */ _emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.T),
+/* harmony export */   ThemeProvider: () => (/* reexport safe */ _emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.a),
+/* harmony export */   __unsafe_useEmotionCache: () => (/* reexport safe */ _emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__._),
 /* harmony export */   createElement: () => (/* binding */ jsx),
 /* harmony export */   css: () => (/* binding */ css),
 /* harmony export */   jsx: () => (/* binding */ jsx),
 /* harmony export */   keyframes: () => (/* binding */ keyframes),
-/* harmony export */   useTheme: () => (/* reexport safe */ _emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.u),
-/* harmony export */   withEmotionCache: () => (/* reexport safe */ _emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.w),
-/* harmony export */   withTheme: () => (/* reexport safe */ _emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.b)
+/* harmony export */   useTheme: () => (/* reexport safe */ _emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.u),
+/* harmony export */   withEmotionCache: () => (/* reexport safe */ _emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.w),
+/* harmony export */   withTheme: () => (/* reexport safe */ _emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.b)
 /* harmony export */ });
-/* harmony import */ var _emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./emotion-element-c39617d8.browser.esm.js */ "./node_modules/@emotion/react/dist/emotion-element-c39617d8.browser.esm.js");
+/* harmony import */ var _emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./emotion-element-43c6fea0.browser.esm.js */ "./node_modules/@emotion/react/dist/emotion-element-43c6fea0.browser.esm.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _emotion_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/utils */ "./node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js");
@@ -1067,7 +1067,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var pkg = {
 	name: "@emotion/react",
-	version: "11.11.0",
+	version: "11.11.4",
 	main: "dist/emotion-react.cjs.js",
 	module: "dist/emotion-react.esm.js",
 	browser: {
@@ -1140,7 +1140,7 @@ var pkg = {
 		"@babel/runtime": "^7.18.3",
 		"@emotion/babel-plugin": "^11.11.0",
 		"@emotion/cache": "^11.11.0",
-		"@emotion/serialize": "^1.1.2",
+		"@emotion/serialize": "^1.1.3",
 		"@emotion/use-insertion-effect-with-fallbacks": "^1.0.1",
 		"@emotion/utils": "^1.2.1",
 		"@emotion/weak-memoize": "^0.3.1",
@@ -1156,7 +1156,7 @@ var pkg = {
 	},
 	devDependencies: {
 		"@definitelytyped/dtslint": "0.0.112",
-		"@emotion/css": "11.11.0",
+		"@emotion/css": "11.11.2",
 		"@emotion/css-prettifier": "1.1.3",
 		"@emotion/server": "11.11.0",
 		"@emotion/styled": "11.11.0",
@@ -1200,15 +1200,15 @@ var pkg = {
 var jsx = function jsx(type, props) {
   var args = arguments;
 
-  if (props == null || !_emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.h.call(props, 'css')) {
+  if (props == null || !_emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.h.call(props, 'css')) {
     // $FlowFixMe
     return react__WEBPACK_IMPORTED_MODULE_1__.createElement.apply(undefined, args);
   }
 
   var argsLength = args.length;
   var createElementArgArray = new Array(argsLength);
-  createElementArgArray[0] = _emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.E;
-  createElementArgArray[1] = (0,_emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.c)(type, props);
+  createElementArgArray[0] = _emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.E;
+  createElementArgArray[1] = (0,_emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.c)(type, props);
 
   for (var i = 2; i < argsLength; i++) {
     createElementArgArray[i] = args[i];
@@ -1222,7 +1222,7 @@ var warnedAboutCssPropForGlobal = false; // maintain place over rerenders.
 // initial render from browser, insertBefore context.sheet.tags[0] or if a style hasn't been inserted there yet, appendChild
 // initial client-side render from SSR, use place of hydrating tag
 
-var Global = /* #__PURE__ */(0,_emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.w)(function (props, cache) {
+var Global = /* #__PURE__ */(0,_emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.w)(function (props, cache) {
   if ( true && !warnedAboutCssPropForGlobal && ( // check for className as well since the user is
   // probably using the custom createElement which
   // means it will be turned into a className prop
@@ -1233,9 +1233,9 @@ var Global = /* #__PURE__ */(0,_emotion_element_c39617d8_browser_esm_js__WEBPACK
   }
 
   var styles = props.styles;
-  var serialized = (0,_emotion_serialize__WEBPACK_IMPORTED_MODULE_4__.serializeStyles)([styles], undefined, react__WEBPACK_IMPORTED_MODULE_1__.useContext(_emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.T));
+  var serialized = (0,_emotion_serialize__WEBPACK_IMPORTED_MODULE_4__.serializeStyles)([styles], undefined, react__WEBPACK_IMPORTED_MODULE_1__.useContext(_emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.T));
 
-  if (!_emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.i) {
+  if (!_emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.i) {
     var _ref;
 
     var serializedNames = serialized.name;
@@ -1425,7 +1425,7 @@ var Insertion = function Insertion(_ref) {
   return null;
 };
 
-var ClassNames = /* #__PURE__ */(0,_emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.w)(function (props, cache) {
+var ClassNames = /* #__PURE__ */(0,_emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.w)(function (props, cache) {
   var hasRendered = false;
   var serializedArr = [];
 
@@ -1460,7 +1460,7 @@ var ClassNames = /* #__PURE__ */(0,_emotion_element_c39617d8_browser_esm_js__WEB
   var content = {
     css: css,
     cx: cx,
-    theme: react__WEBPACK_IMPORTED_MODULE_1__.useContext(_emotion_element_c39617d8_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.T)
+    theme: react__WEBPACK_IMPORTED_MODULE_1__.useContext(_emotion_element_43c6fea0_browser_esm_js__WEBPACK_IMPORTED_MODULE_0__.T)
   };
   var ele = props.children(content);
   hasRendered = true;
@@ -2193,25 +2193,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   arrow: () => (/* binding */ arrow),
 /* harmony export */   autoPlacement: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.autoPlacement),
-/* harmony export */   autoUpdate: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_1__.autoUpdate),
-/* harmony export */   computePosition: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_1__.computePosition),
-/* harmony export */   detectOverflow: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.detectOverflow),
+/* harmony export */   autoUpdate: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.autoUpdate),
+/* harmony export */   computePosition: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.computePosition),
+/* harmony export */   detectOverflow: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_1__.detectOverflow),
 /* harmony export */   flip: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.flip),
-/* harmony export */   getOverflowAncestors: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_1__.getOverflowAncestors),
+/* harmony export */   getOverflowAncestors: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_2__.getOverflowAncestors),
 /* harmony export */   hide: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.hide),
 /* harmony export */   inline: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.inline),
 /* harmony export */   limitShift: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.limitShift),
-/* harmony export */   offset: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.offset),
-/* harmony export */   platform: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_1__.platform),
+/* harmony export */   offset: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_1__.offset),
+/* harmony export */   platform: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.platform),
 /* harmony export */   shift: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.shift),
 /* harmony export */   size: () => (/* reexport safe */ _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.size),
 /* harmony export */   useFloating: () => (/* binding */ useFloating)
 /* harmony export */ });
-/* harmony import */ var _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @floating-ui/dom */ "./node_modules/@floating-ui/core/dist/floating-ui.core.browser.mjs");
-/* harmony import */ var _floating_ui_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @floating-ui/dom */ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.mjs");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @floating-ui/dom */ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs");
+/* harmony import */ var _floating_ui_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @floating-ui/dom */ "./node_modules/@floating-ui/core/dist/floating-ui.core.mjs");
+/* harmony import */ var _floating_ui_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @floating-ui/dom */ "./node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 
 
 
@@ -2256,7 +2257,7 @@ const arrow = options => {
   };
 };
 
-var index = typeof document !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2__.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_2__.useEffect;
+var index = typeof document !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_3__.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_3__.useEffect;
 
 // Fork of `fast-deep-equal` that only does the comparisons we need and compares
 // functions
@@ -2307,7 +2308,7 @@ function deepEqual(a, b) {
 }
 
 function useLatestRef(value) {
-  const ref = react__WEBPACK_IMPORTED_MODULE_2__.useRef(value);
+  const ref = react__WEBPACK_IMPORTED_MODULE_3__.useRef(value);
   index(() => {
     ref.current = value;
   });
@@ -2330,7 +2331,7 @@ function useFloating(options) {
     whileElementsMounted,
     open
   } = options;
-  const [data, setData] = react__WEBPACK_IMPORTED_MODULE_2__.useState({
+  const [data, setData] = react__WEBPACK_IMPORTED_MODULE_3__.useState({
     x: null,
     y: null,
     strategy,
@@ -2338,30 +2339,30 @@ function useFloating(options) {
     middlewareData: {},
     isPositioned: false
   });
-  const [latestMiddleware, setLatestMiddleware] = react__WEBPACK_IMPORTED_MODULE_2__.useState(middleware);
+  const [latestMiddleware, setLatestMiddleware] = react__WEBPACK_IMPORTED_MODULE_3__.useState(middleware);
   if (!deepEqual(latestMiddleware, middleware)) {
     setLatestMiddleware(middleware);
   }
-  const referenceRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
-  const floatingRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
-  const dataRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(data);
+  const referenceRef = react__WEBPACK_IMPORTED_MODULE_3__.useRef(null);
+  const floatingRef = react__WEBPACK_IMPORTED_MODULE_3__.useRef(null);
+  const dataRef = react__WEBPACK_IMPORTED_MODULE_3__.useRef(data);
   const whileElementsMountedRef = useLatestRef(whileElementsMounted);
   const platformRef = useLatestRef(platform);
-  const [reference, _setReference] = react__WEBPACK_IMPORTED_MODULE_2__.useState(null);
-  const [floating, _setFloating] = react__WEBPACK_IMPORTED_MODULE_2__.useState(null);
-  const setReference = react__WEBPACK_IMPORTED_MODULE_2__.useCallback(node => {
+  const [reference, _setReference] = react__WEBPACK_IMPORTED_MODULE_3__.useState(null);
+  const [floating, _setFloating] = react__WEBPACK_IMPORTED_MODULE_3__.useState(null);
+  const setReference = react__WEBPACK_IMPORTED_MODULE_3__.useCallback(node => {
     if (referenceRef.current !== node) {
       referenceRef.current = node;
       _setReference(node);
     }
   }, []);
-  const setFloating = react__WEBPACK_IMPORTED_MODULE_2__.useCallback(node => {
+  const setFloating = react__WEBPACK_IMPORTED_MODULE_3__.useCallback(node => {
     if (floatingRef.current !== node) {
       floatingRef.current = node;
       _setFloating(node);
     }
   }, []);
-  const update = react__WEBPACK_IMPORTED_MODULE_2__.useCallback(() => {
+  const update = react__WEBPACK_IMPORTED_MODULE_3__.useCallback(() => {
     if (!referenceRef.current || !floatingRef.current) {
       return;
     }
@@ -2373,14 +2374,14 @@ function useFloating(options) {
     if (platformRef.current) {
       config.platform = platformRef.current;
     }
-    (0,_floating_ui_dom__WEBPACK_IMPORTED_MODULE_1__.computePosition)(referenceRef.current, floatingRef.current, config).then(data => {
+    (0,_floating_ui_dom__WEBPACK_IMPORTED_MODULE_0__.computePosition)(referenceRef.current, floatingRef.current, config).then(data => {
       const fullData = {
         ...data,
         isPositioned: true
       };
       if (isMountedRef.current && !deepEqual(dataRef.current, fullData)) {
         dataRef.current = fullData;
-        react_dom__WEBPACK_IMPORTED_MODULE_3__.flushSync(() => {
+        react_dom__WEBPACK_IMPORTED_MODULE_4__.flushSync(() => {
           setData(fullData);
         });
       }
@@ -2395,7 +2396,7 @@ function useFloating(options) {
       }));
     }
   }, [open]);
-  const isMountedRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(false);
+  const isMountedRef = react__WEBPACK_IMPORTED_MODULE_3__.useRef(false);
   index(() => {
     isMountedRef.current = true;
     return () => {
@@ -2411,17 +2412,17 @@ function useFloating(options) {
       }
     }
   }, [reference, floating, update, whileElementsMountedRef]);
-  const refs = react__WEBPACK_IMPORTED_MODULE_2__.useMemo(() => ({
+  const refs = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => ({
     reference: referenceRef,
     floating: floatingRef,
     setReference,
     setFloating
   }), [setReference, setFloating]);
-  const elements = react__WEBPACK_IMPORTED_MODULE_2__.useMemo(() => ({
+  const elements = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => ({
     reference,
     floating
   }), [reference, floating]);
-  return react__WEBPACK_IMPORTED_MODULE_2__.useMemo(() => ({
+  return react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => ({
     ...data,
     update,
     refs,
@@ -2452,17 +2453,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   FloatingTree: () => (/* binding */ FloatingTree),
 /* harmony export */   arrow: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_2__.arrow),
 /* harmony export */   autoPlacement: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.autoPlacement),
-/* harmony export */   autoUpdate: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.autoUpdate),
-/* harmony export */   computePosition: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.computePosition),
-/* harmony export */   detectOverflow: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.detectOverflow),
+/* harmony export */   autoUpdate: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.autoUpdate),
+/* harmony export */   computePosition: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.computePosition),
+/* harmony export */   detectOverflow: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.detectOverflow),
 /* harmony export */   flip: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.flip),
-/* harmony export */   getOverflowAncestors: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.getOverflowAncestors),
+/* harmony export */   getOverflowAncestors: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_5__.getOverflowAncestors),
 /* harmony export */   hide: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.hide),
 /* harmony export */   inline: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.inline),
 /* harmony export */   inner: () => (/* binding */ inner),
 /* harmony export */   limitShift: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.limitShift),
-/* harmony export */   offset: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.offset),
-/* harmony export */   platform: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.platform),
+/* harmony export */   offset: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.offset),
+/* harmony export */   platform: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.platform),
 /* harmony export */   safePolygon: () => (/* binding */ safePolygon),
 /* harmony export */   shift: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.shift),
 /* harmony export */   size: () => (/* reexport safe */ _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.size),
@@ -2489,12 +2490,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var aria_hidden__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! aria-hidden */ "./node_modules/aria-hidden/dist/es2015/index.js");
-/* harmony import */ var tabbable__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tabbable */ "./node_modules/tabbable/dist/index.esm.js");
+/* harmony import */ var aria_hidden__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! aria-hidden */ "./node_modules/aria-hidden/dist/es2015/index.js");
+/* harmony import */ var tabbable__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tabbable */ "./node_modules/tabbable/dist/index.esm.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @floating-ui/react-dom */ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.mjs");
-/* harmony import */ var _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @floating-ui/react-dom */ "./node_modules/@floating-ui/core/dist/floating-ui.core.browser.mjs");
+/* harmony import */ var _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @floating-ui/react-dom */ "./node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs");
+/* harmony import */ var _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @floating-ui/react-dom */ "./node_modules/@floating-ui/core/dist/floating-ui.core.mjs");
 /* harmony import */ var _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @floating-ui/react-dom */ "./node_modules/@floating-ui/react-dom/dist/floating-ui.react-dom.esm.js");
+/* harmony import */ var _floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @floating-ui/react-dom */ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs");
 
 
 
@@ -3255,7 +3257,7 @@ const getTabbableOptions = () => ({
   typeof ResizeObserver === 'function' && ResizeObserver.toString().includes('[native code]') ? 'full' : 'none'
 });
 function getTabbableIn(container, direction) {
-  const allTabbable = (0,tabbable__WEBPACK_IMPORTED_MODULE_5__.tabbable)(container, getTabbableOptions());
+  const allTabbable = (0,tabbable__WEBPACK_IMPORTED_MODULE_6__.tabbable)(container, getTabbableOptions());
   if (direction === 'prev') {
     allTabbable.reverse();
   }
@@ -3275,7 +3277,7 @@ function isOutsideEvent(event, container) {
   return !relatedTarget || !contains(containerElement, relatedTarget);
 }
 function disableFocusInside(container) {
-  const tabbableElements = (0,tabbable__WEBPACK_IMPORTED_MODULE_5__.tabbable)(container, getTabbableOptions());
+  const tabbableElements = (0,tabbable__WEBPACK_IMPORTED_MODULE_6__.tabbable)(container, getTabbableOptions());
   tabbableElements.forEach(element => {
     element.dataset.tabindex = element.getAttribute('tabindex') || '';
     element.setAttribute('tabindex', '-1');
@@ -3573,7 +3575,7 @@ function FloatingFocusManager(_ref) {
     if (container === void 0) {
       container = floating;
     }
-    return container ? (0,tabbable__WEBPACK_IMPORTED_MODULE_5__.tabbable)(container, getTabbableOptions()) : [];
+    return container ? (0,tabbable__WEBPACK_IMPORTED_MODULE_6__.tabbable)(container, getTabbableOptions()) : [];
   }, [floating]);
   const getTabbableElements = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(container => {
     const content = getTabbableContent(container);
@@ -3673,7 +3675,7 @@ function FloatingFocusManager(_ref) {
     }
     if (floating && modal) {
       const insideNodes = [floating, ...portalNodes, ...getDismissButtons()];
-      const cleanup = (0,aria_hidden__WEBPACK_IMPORTED_MODULE_6__.hideOthers)(orderRef.current.includes('reference') || isTypeableCombobox ? insideNodes.concat(domReference || []) : insideNodes);
+      const cleanup = (0,aria_hidden__WEBPACK_IMPORTED_MODULE_7__.hideOthers)(orderRef.current.includes('reference') || isTypeableCombobox ? insideNodes.concat(domReference || []) : insideNodes);
       return () => {
         cleanup();
       };
@@ -3683,7 +3685,7 @@ function FloatingFocusManager(_ref) {
     if (modal && !guards && floating) {
       const tabIndexValues = [];
       const options = getTabbableOptions();
-      const allTabbable = (0,tabbable__WEBPACK_IMPORTED_MODULE_5__.tabbable)(getDocument(floating).body, options);
+      const allTabbable = (0,tabbable__WEBPACK_IMPORTED_MODULE_6__.tabbable)(getDocument(floating).body, options);
       const floatingTabbable = getTabbableElements();
 
       // Exclude all tabbable elements that are part of the order
@@ -4257,13 +4259,13 @@ const useDismiss = function (_ref, _temp) {
     let ancestors = [];
     if (ancestorScroll) {
       if (isElement(domReference)) {
-        ancestors = (0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.getOverflowAncestors)(domReference);
+        ancestors = (0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_5__.getOverflowAncestors)(domReference);
       }
       if (isElement(floating)) {
-        ancestors = ancestors.concat((0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.getOverflowAncestors)(floating));
+        ancestors = ancestors.concat((0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_5__.getOverflowAncestors)(floating));
       }
       if (!isElement(reference) && reference && reference.contextElement) {
-        ancestors = ancestors.concat((0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.getOverflowAncestors)(reference.contextElement));
+        ancestors = ancestors.concat((0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_5__.getOverflowAncestors)(reference.contextElement));
       }
     }
 
@@ -5408,11 +5410,11 @@ const inner = props => ({
     }
     const nextArgs = {
       ...state,
-      ...(await (0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.offset)(-item.offsetTop - rects.reference.height / 2 - item.offsetHeight / 2 - innerOffset).fn(state))
+      ...(await (0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.offset)(-item.offsetTop - rects.reference.height / 2 - item.offsetHeight / 2 - innerOffset).fn(state))
     };
     const el = (scrollRef == null ? void 0 : scrollRef.current) || floating;
-    const overflow = await (0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.detectOverflow)(getArgsWithCustomFloatingHeight(nextArgs, el.scrollHeight), detectOverflowOptions);
-    const refOverflow = await (0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.detectOverflow)(nextArgs, {
+    const overflow = await (0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.detectOverflow)(getArgsWithCustomFloatingHeight(nextArgs, el.scrollHeight), detectOverflowOptions);
+    const refOverflow = await (0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.detectOverflow)(nextArgs, {
       ...detectOverflowOptions,
       elementContext: 'reference'
     });
@@ -5431,7 +5433,7 @@ const inner = props => ({
       }
     }
     if (overflowRef) {
-      overflowRef.current = await (0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_3__.detectOverflow)(getArgsWithCustomFloatingHeight({
+      overflowRef.current = await (0,_floating_ui_react_dom__WEBPACK_IMPORTED_MODULE_4__.detectOverflow)(getArgsWithCustomFloatingHeight({
         ...nextArgs,
         y: nextY
       }, el.offsetHeight), detectOverflowOptions);
@@ -6025,8 +6027,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _mantine_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mantine/styles */ "./node_modules/@mantine/styles/esm/theme/utils/get-size/get-size.js");
-/* harmony import */ var _mantine_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mantine/styles */ "./node_modules/@mantine/styles/esm/theme/utils/rem/rem.js");
-/* harmony import */ var _mantine_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mantine/styles */ "./node_modules/@mantine/styles/esm/theme/functions/fns/breakpoints/breakpoints.js");
+/* harmony import */ var _mantine_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mantine/styles */ "./node_modules/@mantine/styles/esm/theme/functions/fns/breakpoints/breakpoints.js");
+/* harmony import */ var _mantine_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mantine/styles */ "./node_modules/@mantine/styles/esm/theme/utils/rem/rem.js");
 /* harmony import */ var _mantine_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mantine/styles */ "./node_modules/@mantine/styles/esm/tss/create-styles.js");
 
 
@@ -6053,19 +6055,27 @@ function getPositionStyles(props, theme) {
   if (!props.fixed) {
     return { padding };
   }
-  return {
+  const navbarBreakpointValue = (0,_mantine_styles__WEBPACK_IMPORTED_MODULE_1__.getBreakpointValue)(navbarOffset);
+  const asideBreakpointValue = (0,_mantine_styles__WEBPACK_IMPORTED_MODULE_1__.getBreakpointValue)(asideOffset);
+  return __spreadValues({
     minHeight: "100vh",
     paddingTop: `calc(var(--mantine-header-height, 0px) + ${padding})`,
     paddingBottom: `calc(var(--mantine-footer-height, 0px) + ${padding})`,
     paddingLeft: `calc(var(--mantine-navbar-width, 0px) + ${padding})`,
-    paddingRight: `calc(var(--mantine-aside-width, 0px) + ${padding})`,
-    [`@media (max-width: ${(0,_mantine_styles__WEBPACK_IMPORTED_MODULE_1__.em)((0,_mantine_styles__WEBPACK_IMPORTED_MODULE_2__.getBreakpointValue)(navbarOffset) - 1)})`]: {
-      paddingLeft: padding
-    },
-    [`@media (max-width: ${(0,_mantine_styles__WEBPACK_IMPORTED_MODULE_1__.em)((0,_mantine_styles__WEBPACK_IMPORTED_MODULE_2__.getBreakpointValue)(asideOffset) - 1)})`]: {
+    paddingRight: `calc(var(--mantine-aside-width, 0px) + ${padding})`
+  }, navbarBreakpointValue === asideBreakpointValue ? {
+    [`@media (max-width: ${(0,_mantine_styles__WEBPACK_IMPORTED_MODULE_2__.em)(navbarBreakpointValue - 1)})`]: {
+      paddingLeft: padding,
       paddingRight: padding
     }
-  };
+  } : {
+    [`@media (max-width: ${(0,_mantine_styles__WEBPACK_IMPORTED_MODULE_2__.em)(navbarBreakpointValue - 1)})`]: {
+      paddingLeft: padding
+    },
+    [`@media (max-width: ${(0,_mantine_styles__WEBPACK_IMPORTED_MODULE_2__.em)(asideBreakpointValue - 1)})`]: {
+      paddingRight: padding
+    }
+  });
 }
 var useStyles = (0,_mantine_styles__WEBPACK_IMPORTED_MODULE_3__.createStyles)((theme, props) => ({
   root: {
@@ -7276,11 +7286,13 @@ var __objRest = (source, exclude) => {
   return target;
 };
 function CheckIcon(props) {
+  const _a = props, { width, height, style } = _a, others = __objRest(_a, ["width", "height", "style"]);
   return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", __spreadValues({
     viewBox: "0 0 10 7",
     fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, props), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    xmlns: "http://www.w3.org/2000/svg",
+    style: __spreadValues({ width, height }, style)
+  }, others), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
     d: "M4 4.586L1.707 2.293A1 1 0 1 0 .293 3.707l3 3a.997.997 0 0 0 1.414 0l5-5A1 1 0 1 0 8.293.293L4 4.586z",
     fill: "currentColor",
     fillRule: "evenodd",
@@ -7587,7 +7599,7 @@ var useStyles = (0,_mantine_styles__WEBPACK_IMPORTED_MODULE_1__.createStyles)((t
     }, theme.fn.fontStyles()), {
       boxSizing: "border-box",
       color: theme.colorScheme === "dark" ? theme.colors.dark[0] : theme.black,
-      display: "inline-block",
+      display: "inline-flex",
       alignItems: "center",
       userSelect: "none",
       border: `${(0,_mantine_styles__WEBPACK_IMPORTED_MODULE_0__.rem)(1)} solid transparent`,
@@ -8013,7 +8025,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.mjs");
+/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs");
 /* harmony import */ var _mantine_hooks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mantine/hooks */ "./node_modules/@mantine/hooks/esm/use-did-update/use-did-update.js");
 
 
@@ -8549,12 +8561,13 @@ var __objRest = (source, exclude) => {
 };
 function Bars(_a) {
   var _b = _a, { size, color } = _b, others = __objRest(_b, ["size", "color"]);
+  const _a2 = others, { style } = _a2, rest = __objRest(_a2, ["style"]);
   return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", __spreadValues({
     viewBox: "0 0 135 140",
     xmlns: "http://www.w3.org/2000/svg",
     fill: color,
-    width: size
-  }, others), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("rect", {
+    style: __spreadValues({ width: size }, style)
+  }, rest), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("rect", {
     y: "10",
     width: "15",
     height: "120",
@@ -8705,12 +8718,13 @@ var __objRest = (source, exclude) => {
 };
 function Dots(_a) {
   var _b = _a, { size, color } = _b, others = __objRest(_b, ["size", "color"]);
+  const _a2 = others, { style } = _a2, rest = __objRest(_a2, ["style"]);
   return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", __spreadValues({
-    width: size,
     viewBox: "0 0 120 30",
     xmlns: "http://www.w3.org/2000/svg",
-    fill: color
-  }, others), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("circle", {
+    fill: color,
+    style: __spreadValues({ width: size }, style)
+  }, rest), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("circle", {
     cx: "15",
     cy: "15",
     r: "15"
@@ -8830,13 +8844,13 @@ var __objRest = (source, exclude) => {
 };
 function Oval(_a) {
   var _b = _a, { size, color } = _b, others = __objRest(_b, ["size", "color"]);
+  const _a2 = others, { style } = _a2, rest = __objRest(_a2, ["style"]);
   return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", __spreadValues({
-    width: size,
-    height: size,
     viewBox: "0 0 38 38",
     xmlns: "http://www.w3.org/2000/svg",
-    stroke: color
-  }, others), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("g", {
+    stroke: color,
+    style: __spreadValues({ width: size, height: size }, style)
+  }, rest), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("g", {
     fill: "none",
     fillRule: "evenodd"
   }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0___default().createElement("g", {
@@ -9888,8 +9902,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/react/dist/floating-ui.react.esm.js");
-/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/core/dist/floating-ui.core.browser.mjs");
-/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.mjs");
+/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs");
+/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs");
 
 
 
@@ -10024,12 +10038,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/react/dist/floating-ui.react.esm.js");
-/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/core/dist/floating-ui.core.browser.mjs");
-/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/react-dom/dist/floating-ui.react-dom.esm.js");
+/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/core/dist/floating-ui.core.mjs");
+/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs");
+/* harmony import */ var _floating_ui_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @floating-ui/react */ "./node_modules/@floating-ui/react-dom/dist/floating-ui.react-dom.esm.js");
 /* harmony import */ var _mantine_hooks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mantine/hooks */ "./node_modules/@mantine/hooks/esm/use-id/use-id.js");
-/* harmony import */ var _mantine_hooks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mantine/hooks */ "./node_modules/@mantine/hooks/esm/use-did-update/use-did-update.js");
+/* harmony import */ var _mantine_hooks__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mantine/hooks */ "./node_modules/@mantine/hooks/esm/use-did-update/use-did-update.js");
 /* harmony import */ var _TooltipGroup_TooltipGroup_context_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TooltipGroup/TooltipGroup.context.js */ "./node_modules/@mantine/core/esm/Tooltip/TooltipGroup/TooltipGroup.context.js");
-/* harmony import */ var _Floating_use_floating_auto_update_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Floating/use-floating-auto-update.js */ "./node_modules/@mantine/core/esm/Floating/use-floating-auto-update.js");
+/* harmony import */ var _Floating_use_floating_auto_update_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Floating/use-floating-auto-update.js */ "./node_modules/@mantine/core/esm/Floating/use-floating-auto-update.js");
 
 
 
@@ -10065,10 +10080,10 @@ function useTooltip(settings) {
     onOpenChange: onChange,
     middleware: [
       (0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_4__.offset)(settings.offset),
-      (0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_4__.shift)({ padding: 8 }),
-      (0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_4__.flip)(),
-      (0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_5__.arrow)({ element: settings.arrowRef, padding: settings.arrowOffset }),
-      ...settings.inline ? [(0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_4__.inline)()] : []
+      (0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_5__.shift)({ padding: 8 }),
+      (0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_5__.flip)(),
+      (0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_6__.arrow)({ element: settings.arrowRef, padding: settings.arrowOffset }),
+      ...settings.inline ? [(0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_5__.inline)()] : []
     ]
   });
   const { getReferenceProps, getFloatingProps } = (0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_3__.useInteractions)([
@@ -10082,13 +10097,13 @@ function useTooltip(settings) {
     (0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_3__.useDismiss)(context, { enabled: typeof settings.opened === void 0 }),
     (0,_floating_ui_react__WEBPACK_IMPORTED_MODULE_3__.useDelayGroup)(context, { id: uid })
   ]);
-  (0,_Floating_use_floating_auto_update_js__WEBPACK_IMPORTED_MODULE_6__.useFloatingAutoUpdate)({
+  (0,_Floating_use_floating_auto_update_js__WEBPACK_IMPORTED_MODULE_7__.useFloatingAutoUpdate)({
     opened,
     position: settings.position,
     positionDependencies: settings.positionDependencies,
     floating: { refs, update }
   });
-  (0,_mantine_hooks__WEBPACK_IMPORTED_MODULE_7__.useDidUpdate)(() => {
+  (0,_mantine_hooks__WEBPACK_IMPORTED_MODULE_8__.useDidUpdate)(() => {
     var _a;
     (_a = settings.onPositionChange) == null ? void 0 : _a.call(settings, placement);
   }, [placement]);
@@ -11033,7 +11048,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-element-c39617d8.browser.esm.js");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-element-43c6fea0.browser.esm.js");
 /* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.browser.esm.js");
 /* harmony import */ var _default_theme_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./default-theme.js */ "./node_modules/@mantine/styles/esm/theme/default-theme.js");
 /* harmony import */ var _GlobalStyles_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./GlobalStyles.js */ "./node_modules/@mantine/styles/esm/theme/GlobalStyles.js");
@@ -13052,21 +13067,26 @@ var applyAttributeToOthers = function (originalTarget, parentNode, markerName, c
                 deep(node);
             }
             else {
-                var attr = node.getAttribute(controlAttribute);
-                var alreadyHidden = attr !== null && attr !== 'false';
-                var counterValue = (counterMap.get(node) || 0) + 1;
-                var markerValue = (markerCounter.get(node) || 0) + 1;
-                counterMap.set(node, counterValue);
-                markerCounter.set(node, markerValue);
-                hiddenNodes.push(node);
-                if (counterValue === 1 && alreadyHidden) {
-                    uncontrolledNodes.set(node, true);
+                try {
+                    var attr = node.getAttribute(controlAttribute);
+                    var alreadyHidden = attr !== null && attr !== 'false';
+                    var counterValue = (counterMap.get(node) || 0) + 1;
+                    var markerValue = (markerCounter.get(node) || 0) + 1;
+                    counterMap.set(node, counterValue);
+                    markerCounter.set(node, markerValue);
+                    hiddenNodes.push(node);
+                    if (counterValue === 1 && alreadyHidden) {
+                        uncontrolledNodes.set(node, true);
+                    }
+                    if (markerValue === 1) {
+                        node.setAttribute(markerName, 'true');
+                    }
+                    if (!alreadyHidden) {
+                        node.setAttribute(controlAttribute, 'true');
+                    }
                 }
-                if (markerValue === 1) {
-                    node.setAttribute(markerName, 'true');
-                }
-                if (!alreadyHidden) {
-                    node.setAttribute(controlAttribute, 'true');
+                catch (e) {
+                    console.error('aria-hidden: cannot operate on ', node, e);
                 }
             }
         });
@@ -48247,12 +48267,13 @@ if (false) {} else {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   focusable: () => (/* binding */ focusable),
+/* harmony export */   getTabIndex: () => (/* binding */ getTabIndex),
 /* harmony export */   isFocusable: () => (/* binding */ isFocusable),
 /* harmony export */   isTabbable: () => (/* binding */ isTabbable),
 /* harmony export */   tabbable: () => (/* binding */ tabbable)
 /* harmony export */ });
 /*!
-* tabbable 6.1.2
+* tabbable 6.2.0
 * @license MIT, https://github.com/focus-trap/tabbable/blob/master/LICENSE
 */
 // NOTE: separate `:not()` selectors has broader browser support than the newer
@@ -48432,7 +48453,27 @@ var getCandidatesIteratively = function getCandidatesIteratively(elements, inclu
   }
   return candidates;
 };
-var getTabindex = function getTabindex(node, isScope) {
+
+/**
+ * @private
+ * Determines if the node has an explicitly specified `tabindex` attribute.
+ * @param {HTMLElement} node
+ * @returns {boolean} True if so; false if not.
+ */
+var hasTabIndex = function hasTabIndex(node) {
+  return !isNaN(parseInt(node.getAttribute('tabindex'), 10));
+};
+
+/**
+ * Determine the tab index of a given node.
+ * @param {HTMLElement} node
+ * @returns {number} Tab order (negative, 0, or positive number).
+ * @throws {Error} If `node` is falsy.
+ */
+var getTabIndex = function getTabIndex(node) {
+  if (!node) {
+    throw new Error('No node provided');
+  }
   if (node.tabIndex < 0) {
     // in Chrome, <details/>, <audio controls/> and <video controls/> elements get a default
     // `tabIndex` of -1 when the 'tabindex' attribute isn't specified in the DOM,
@@ -48441,15 +48482,27 @@ var getTabindex = function getTabindex(node, isScope) {
     // order, consider their tab index to be 0.
     // Also browsers do not return `tabIndex` correctly for contentEditable nodes;
     // so if they don't have a tabindex attribute specifically set, assume it's 0.
-    //
-    // isScope is positive for custom element with shadow root or slot that by default
-    // have tabIndex -1, but need to be sorted by document order in order for their
-    // content to be inserted in the correct position
-    if ((isScope || /^(AUDIO|VIDEO|DETAILS)$/.test(node.tagName) || isContentEditable(node)) && isNaN(parseInt(node.getAttribute('tabindex'), 10))) {
+    if ((/^(AUDIO|VIDEO|DETAILS)$/.test(node.tagName) || isContentEditable(node)) && !hasTabIndex(node)) {
       return 0;
     }
   }
   return node.tabIndex;
+};
+
+/**
+ * Determine the tab index of a given node __for sort order purposes__.
+ * @param {HTMLElement} node
+ * @param {boolean} [isScope] True for a custom element with shadow root or slot that, by default,
+ *  has tabIndex -1, but needs to be sorted by document order in order for its content to be
+ *  inserted into the correct sort position.
+ * @returns {number} Tab order (negative, 0, or positive number).
+ */
+var getSortOrderTabIndex = function getSortOrderTabIndex(node, isScope) {
+  var tabIndex = getTabIndex(node);
+  if (tabIndex < 0 && isScope && !hasTabIndex(node)) {
+    return 0;
+  }
+  return tabIndex;
 };
 var sortOrderedTabbables = function sortOrderedTabbables(a, b) {
   return a.tabIndex === b.tabIndex ? a.documentOrder - b.documentOrder : a.tabIndex - b.tabIndex;
@@ -48693,7 +48746,7 @@ var isNodeMatchingSelectorFocusable = function isNodeMatchingSelectorFocusable(o
   return true;
 };
 var isNodeMatchingSelectorTabbable = function isNodeMatchingSelectorTabbable(options, node) {
-  if (isNonTabbableRadio(node) || getTabindex(node) < 0 || !isNodeMatchingSelectorFocusable(options, node)) {
+  if (isNonTabbableRadio(node) || getTabIndex(node) < 0 || !isNodeMatchingSelectorFocusable(options, node)) {
     return false;
   }
   return true;
@@ -48718,7 +48771,7 @@ var sortByOrder = function sortByOrder(candidates) {
   candidates.forEach(function (item, i) {
     var isScope = !!item.scopeParent;
     var element = isScope ? item.scopeParent : item;
-    var candidateTabindex = getTabindex(element, isScope);
+    var candidateTabindex = getSortOrderTabIndex(element, isScope);
     var elements = isScope ? sortByOrder(item.candidates) : element;
     if (candidateTabindex === 0) {
       isScope ? regularTabbables.push.apply(regularTabbables, elements) : regularTabbables.push(element);
@@ -48737,32 +48790,32 @@ var sortByOrder = function sortByOrder(candidates) {
     return acc;
   }, []).concat(regularTabbables);
 };
-var tabbable = function tabbable(el, options) {
+var tabbable = function tabbable(container, options) {
   options = options || {};
   var candidates;
   if (options.getShadowRoot) {
-    candidates = getCandidatesIteratively([el], options.includeContainer, {
+    candidates = getCandidatesIteratively([container], options.includeContainer, {
       filter: isNodeMatchingSelectorTabbable.bind(null, options),
       flatten: false,
       getShadowRoot: options.getShadowRoot,
       shadowRootFilter: isValidShadowRootTabbable
     });
   } else {
-    candidates = getCandidates(el, options.includeContainer, isNodeMatchingSelectorTabbable.bind(null, options));
+    candidates = getCandidates(container, options.includeContainer, isNodeMatchingSelectorTabbable.bind(null, options));
   }
   return sortByOrder(candidates);
 };
-var focusable = function focusable(el, options) {
+var focusable = function focusable(container, options) {
   options = options || {};
   var candidates;
   if (options.getShadowRoot) {
-    candidates = getCandidatesIteratively([el], options.includeContainer, {
+    candidates = getCandidatesIteratively([container], options.includeContainer, {
       filter: isNodeMatchingSelectorFocusable.bind(null, options),
       flatten: true,
       getShadowRoot: options.getShadowRoot
     });
   } else {
-    candidates = getCandidates(el, options.includeContainer, isNodeMatchingSelectorFocusable.bind(null, options));
+    candidates = getCandidates(container, options.includeContainer, isNodeMatchingSelectorFocusable.bind(null, options));
   }
   return candidates;
 };
@@ -48820,22 +48873,22 @@ function App() {
     const helpButtonClick = () => {
         window.open('https://matthewbattagel.co.uk/#/help/antonium', '_blank');
     };
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_2__.MantineProvider, Object.assign({ theme: {
+    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_2__.MantineProvider, { theme: {
             colorScheme: "light",
-        } }, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_3__.AppShell, Object.assign({ padding: "md", styles: (theme) => ({
+        }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_3__.AppShell, { padding: "md", styles: (theme) => ({
                 main: {
                     backgroundColor: theme.colorScheme === "dark"
                         ? theme.colors.dark[8]
                         : theme.colors.gray[0],
                 },
-            }), sx: { width: "100%", height: "100%" } }, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_4__.Center, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", Object.assign({ style: {
+            }), sx: { width: "100%", height: "100%" }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_4__.Center, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { style: {
                         backgroundColor: "#00B388",
                         padding: "10px",
                         width: "100%",
-                    } }, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", Object.assign({ style: {
+                    }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { style: {
                             backgroundColor: theme.colors.gray[0],
                             padding: "10px",
-                        } }, { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", Object.assign({ style: { display: "flex", marginBottom: "5px" } }, { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_5__.Title, Object.assign({ order: 1 }, { children: "DaaS" })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_6__.Tooltip, Object.assign({ withArrow: true, label: "Help" }, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_7__.Button, Object.assign({ radius: "xl", size: "xs", color: "teal", compact: true, style: { marginLeft: "auto", order: 2 }, onClick: helpButtonClick }, { children: "?" })) }))] })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Options__WEBPACK_IMPORTED_MODULE_1__["default"], {})] })) })) }) })) })));
+                        }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { style: { display: "flex", marginBottom: "5px" }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_5__.Title, { order: 1, children: "DaaS" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_6__.Tooltip, { withArrow: true, label: "Help", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_7__.Button, { radius: "xl", size: "xs", color: "teal", compact: true, style: { marginLeft: "auto", order: 2 }, onClick: helpButtonClick, children: "?" }) })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Options__WEBPACK_IMPORTED_MODULE_1__["default"], {})] }) }) }) }) }));
 }
 
 
@@ -48886,7 +48939,7 @@ function Options() {
             });
         }
     }, [value]);
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", Object.assign({ className: "options" }, { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_2__.Text, Object.assign({ size: "sm" }, { children: "Choose what you want to highlight" })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_3__.Chip.Group, Object.assign({ multiple: true, value: value, onChange: setValue }, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mantine_core__WEBPACK_IMPORTED_MODULE_4__.Group, Object.assign({ position: "left", style: { paddingTop: "5px", gap: "0.2rem" } }, { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_3__.Chip, Object.assign({ color: "teal", value: "general" }, { children: "General" })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_3__.Chip, Object.assign({ color: "teal", value: "hpe" }, { children: "HPE" }))] })) }))] })));
+    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "options", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_2__.Text, { size: "sm", children: "Choose what you want to highlight" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_3__.Chip.Group, { multiple: true, value: value, onChange: setValue, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mantine_core__WEBPACK_IMPORTED_MODULE_4__.Group, { position: "left", style: { paddingTop: "5px", gap: "0.2rem" }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_3__.Chip, { color: "teal", value: "general", children: "General" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mantine_core__WEBPACK_IMPORTED_MODULE_3__.Chip, { color: "teal", value: "hpe", children: "HPE" })] }) })] }));
 }
 
 
@@ -48919,10 +48972,10 @@ function _extends() {
 
 /***/ }),
 
-/***/ "./node_modules/@floating-ui/core/dist/floating-ui.core.browser.mjs":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@floating-ui/core/dist/floating-ui.core.browser.mjs ***!
-  \**************************************************************************/
+/***/ "./node_modules/@floating-ui/core/dist/floating-ui.core.mjs":
+/*!******************************************************************!*\
+  !*** ./node_modules/@floating-ui/core/dist/floating-ui.core.mjs ***!
+  \******************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -48936,38 +48989,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   inline: () => (/* binding */ inline),
 /* harmony export */   limitShift: () => (/* binding */ limitShift),
 /* harmony export */   offset: () => (/* binding */ offset),
-/* harmony export */   rectToClientRect: () => (/* binding */ rectToClientRect),
+/* harmony export */   rectToClientRect: () => (/* reexport safe */ _floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.rectToClientRect),
 /* harmony export */   shift: () => (/* binding */ shift),
 /* harmony export */   size: () => (/* binding */ size)
 /* harmony export */ });
-function getAlignment(placement) {
-  return placement.split('-')[1];
-}
+/* harmony import */ var _floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @floating-ui/utils */ "./node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs");
 
-function getLengthFromAxis(axis) {
-  return axis === 'y' ? 'height' : 'width';
-}
 
-function getSide(placement) {
-  return placement.split('-')[0];
-}
-
-function getMainAxisFromPlacement(placement) {
-  return ['top', 'bottom'].includes(getSide(placement)) ? 'x' : 'y';
-}
 
 function computeCoordsFromPlacement(_ref, placement, rtl) {
   let {
     reference,
     floating
   } = _ref;
+  const sideAxis = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSideAxis)(placement);
+  const alignmentAxis = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignmentAxis)(placement);
+  const alignLength = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAxisLength)(alignmentAxis);
+  const side = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(placement);
+  const isVertical = sideAxis === 'y';
   const commonX = reference.x + reference.width / 2 - floating.width / 2;
   const commonY = reference.y + reference.height / 2 - floating.height / 2;
-  const mainAxis = getMainAxisFromPlacement(placement);
-  const length = getLengthFromAxis(mainAxis);
-  const commonAlign = reference[length] / 2 - floating[length] / 2;
-  const side = getSide(placement);
-  const isVertical = mainAxis === 'x';
+  const commonAlign = reference[alignLength] / 2 - floating[alignLength] / 2;
   let coords;
   switch (side) {
     case 'top':
@@ -49000,12 +49042,12 @@ function computeCoordsFromPlacement(_ref, placement, rtl) {
         y: reference.y
       };
   }
-  switch (getAlignment(placement)) {
+  switch ((0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignment)(placement)) {
     case 'start':
-      coords[mainAxis] -= commonAlign * (rtl && isVertical ? -1 : 1);
+      coords[alignmentAxis] -= commonAlign * (rtl && isVertical ? -1 : 1);
       break;
     case 'end':
-      coords[mainAxis] += commonAlign * (rtl && isVertical ? -1 : 1);
+      coords[alignmentAxis] += commonAlign * (rtl && isVertical ? -1 : 1);
       break;
   }
   return coords;
@@ -49013,7 +49055,7 @@ function computeCoordsFromPlacement(_ref, placement, rtl) {
 
 /**
  * Computes the `x` and `y` coordinates that will place the floating element
- * next to a reference element when it is given a certain positioning strategy.
+ * next to a given reference element.
  *
  * This export does not have any `platform` interface logic. You will need to
  * write one for the platform you are using Floating UI with.
@@ -49091,7 +49133,6 @@ const computePosition = async (reference, floating, config) => {
         } = computeCoordsFromPlacement(rects, statefulPlacement, rtl));
       }
       i = -1;
-      continue;
     }
   }
   return {
@@ -49102,35 +49143,6 @@ const computePosition = async (reference, floating, config) => {
     middlewareData
   };
 };
-
-function expandPaddingObject(padding) {
-  return {
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0,
-    ...padding
-  };
-}
-
-function getSideObjectFromPadding(padding) {
-  return typeof padding !== 'number' ? expandPaddingObject(padding) : {
-    top: padding,
-    right: padding,
-    bottom: padding,
-    left: padding
-  };
-}
-
-function rectToClientRect(rect) {
-  return {
-    ...rect,
-    top: rect.y,
-    left: rect.x,
-    right: rect.x + rect.width,
-    bottom: rect.y + rect.height
-  };
-}
 
 /**
  * Resolves with an object of overflow side offsets that determine how much the
@@ -49159,11 +49171,11 @@ async function detectOverflow(state, options) {
     elementContext = 'floating',
     altBoundary = false,
     padding = 0
-  } = options;
-  const paddingObject = getSideObjectFromPadding(padding);
+  } = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(options, state);
+  const paddingObject = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getPaddingObject)(padding);
   const altContext = elementContext === 'floating' ? 'reference' : 'floating';
   const element = elements[altBoundary ? altContext : elementContext];
-  const clippingClientRect = rectToClientRect(await platform.getClippingRect({
+  const clippingClientRect = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.rectToClientRect)(await platform.getClippingRect({
     element: ((_await$platform$isEle = await (platform.isElement == null ? void 0 : platform.isElement(element))) != null ? _await$platform$isEle : true) ? element : element.contextElement || (await (platform.getDocumentElement == null ? void 0 : platform.getDocumentElement(elements.floating))),
     boundary,
     rootBoundary,
@@ -49182,7 +49194,8 @@ async function detectOverflow(state, options) {
     x: 1,
     y: 1
   };
-  const elementClientRect = rectToClientRect(platform.convertOffsetParentRelativeRectToViewportRelativeRect ? await platform.convertOffsetParentRelativeRectToViewportRelativeRect({
+  const elementClientRect = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.rectToClientRect)(platform.convertOffsetParentRelativeRectToViewportRelativeRect ? await platform.convertOffsetParentRelativeRectToViewportRelativeRect({
+    elements,
     rect,
     offsetParent,
     strategy
@@ -49195,13 +49208,6 @@ async function detectOverflow(state, options) {
   };
 }
 
-const min = Math.min;
-const max = Math.max;
-
-function within(min$1, value, max$1) {
-  return max(min$1, min(value, max$1));
-}
-
 /**
  * Provides data to position an inner element of the floating element so that it
  * appears centered to the reference element.
@@ -49211,29 +49217,30 @@ const arrow = options => ({
   name: 'arrow',
   options,
   async fn(state) {
-    // Since `element` is required, we don't Partial<> the type.
-    const {
-      element,
-      padding = 0
-    } = options || {};
     const {
       x,
       y,
       placement,
       rects,
       platform,
-      elements
+      elements,
+      middlewareData
     } = state;
+    // Since `element` is required, we don't Partial<> the type.
+    const {
+      element,
+      padding = 0
+    } = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(options, state) || {};
     if (element == null) {
       return {};
     }
-    const paddingObject = getSideObjectFromPadding(padding);
+    const paddingObject = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getPaddingObject)(padding);
     const coords = {
       x,
       y
     };
-    const axis = getMainAxisFromPlacement(placement);
-    const length = getLengthFromAxis(axis);
+    const axis = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignmentAxis)(placement);
+    const length = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAxisLength)(axis);
     const arrowDimensions = await platform.getDimensions(element);
     const isYAxis = axis === 'y';
     const minProp = isYAxis ? 'top' : 'left';
@@ -49250,72 +49257,44 @@ const arrow = options => ({
     }
     const centerToReference = endDiff / 2 - startDiff / 2;
 
+    // If the padding is large enough that it causes the arrow to no longer be
+    // centered, modify the padding so that it is centered.
+    const largestPossiblePadding = clientSize / 2 - arrowDimensions[length] / 2 - 1;
+    const minPadding = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.min)(paddingObject[minProp], largestPossiblePadding);
+    const maxPadding = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.min)(paddingObject[maxProp], largestPossiblePadding);
+
     // Make sure the arrow doesn't overflow the floating element if the center
     // point is outside the floating element's bounds.
-    const min = paddingObject[minProp];
-    const max = clientSize - arrowDimensions[length] - paddingObject[maxProp];
+    const min$1 = minPadding;
+    const max = clientSize - arrowDimensions[length] - maxPadding;
     const center = clientSize / 2 - arrowDimensions[length] / 2 + centerToReference;
-    const offset = within(min, center, max);
+    const offset = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.clamp)(min$1, center, max);
 
     // If the reference is small enough that the arrow's padding causes it to
     // to point to nothing for an aligned placement, adjust the offset of the
-    // floating element itself. This stops `shift()` from taking action, but can
-    // be worked around by calling it again after the `arrow()` if desired.
-    const shouldAddOffset = getAlignment(placement) != null && center != offset && rects.reference[length] / 2 - (center < min ? paddingObject[minProp] : paddingObject[maxProp]) - arrowDimensions[length] / 2 < 0;
-    const alignmentOffset = shouldAddOffset ? center < min ? min - center : max - center : 0;
+    // floating element itself. To ensure `shift()` continues to take action,
+    // a single reset is performed when this is true.
+    const shouldAddOffset = !middlewareData.arrow && (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignment)(placement) != null && center !== offset && rects.reference[length] / 2 - (center < min$1 ? minPadding : maxPadding) - arrowDimensions[length] / 2 < 0;
+    const alignmentOffset = shouldAddOffset ? center < min$1 ? center - min$1 : center - max : 0;
     return {
-      [axis]: coords[axis] - alignmentOffset,
+      [axis]: coords[axis] + alignmentOffset,
       data: {
         [axis]: offset,
-        centerOffset: center - offset
-      }
+        centerOffset: center - offset - alignmentOffset,
+        ...(shouldAddOffset && {
+          alignmentOffset
+        })
+      },
+      reset: shouldAddOffset
     };
   }
 });
 
-const sides = ['top', 'right', 'bottom', 'left'];
-const allPlacements = /*#__PURE__*/sides.reduce((acc, side) => acc.concat(side, side + "-start", side + "-end"), []);
-
-const oppositeSideMap = {
-  left: 'right',
-  right: 'left',
-  bottom: 'top',
-  top: 'bottom'
-};
-function getOppositePlacement(placement) {
-  return placement.replace(/left|right|bottom|top/g, side => oppositeSideMap[side]);
-}
-
-function getAlignmentSides(placement, rects, rtl) {
-  if (rtl === void 0) {
-    rtl = false;
-  }
-  const alignment = getAlignment(placement);
-  const mainAxis = getMainAxisFromPlacement(placement);
-  const length = getLengthFromAxis(mainAxis);
-  let mainAlignmentSide = mainAxis === 'x' ? alignment === (rtl ? 'end' : 'start') ? 'right' : 'left' : alignment === 'start' ? 'bottom' : 'top';
-  if (rects.reference[length] > rects.floating[length]) {
-    mainAlignmentSide = getOppositePlacement(mainAlignmentSide);
-  }
-  return {
-    main: mainAlignmentSide,
-    cross: getOppositePlacement(mainAlignmentSide)
-  };
-}
-
-const oppositeAlignmentMap = {
-  start: 'end',
-  end: 'start'
-};
-function getOppositeAlignmentPlacement(placement) {
-  return placement.replace(/start|end/g, alignment => oppositeAlignmentMap[alignment]);
-}
-
 function getPlacementList(alignment, autoAlignment, allowedPlacements) {
-  const allowedPlacementsSortedByAlignment = alignment ? [...allowedPlacements.filter(placement => getAlignment(placement) === alignment), ...allowedPlacements.filter(placement => getAlignment(placement) !== alignment)] : allowedPlacements.filter(placement => getSide(placement) === placement);
+  const allowedPlacementsSortedByAlignment = alignment ? [...allowedPlacements.filter(placement => (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignment)(placement) === alignment), ...allowedPlacements.filter(placement => (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignment)(placement) !== alignment)] : allowedPlacements.filter(placement => (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(placement) === placement);
   return allowedPlacementsSortedByAlignment.filter(placement => {
     if (alignment) {
-      return getAlignment(placement) === alignment || (autoAlignment ? getOppositeAlignmentPlacement(placement) !== placement : false);
+      return (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignment)(placement) === alignment || (autoAlignment ? (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getOppositeAlignmentPlacement)(placement) !== placement : false);
     }
     return true;
   });
@@ -49345,36 +49324,33 @@ const autoPlacement = function (options) {
       const {
         crossAxis = false,
         alignment,
-        allowedPlacements = allPlacements,
+        allowedPlacements = _floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.placements,
         autoAlignment = true,
         ...detectOverflowOptions
-      } = options;
-      const placements = alignment !== undefined || allowedPlacements === allPlacements ? getPlacementList(alignment || null, autoAlignment, allowedPlacements) : allowedPlacements;
+      } = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(options, state);
+      const placements$1 = alignment !== undefined || allowedPlacements === _floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.placements ? getPlacementList(alignment || null, autoAlignment, allowedPlacements) : allowedPlacements;
       const overflow = await detectOverflow(state, detectOverflowOptions);
       const currentIndex = ((_middlewareData$autoP = middlewareData.autoPlacement) == null ? void 0 : _middlewareData$autoP.index) || 0;
-      const currentPlacement = placements[currentIndex];
+      const currentPlacement = placements$1[currentIndex];
       if (currentPlacement == null) {
         return {};
       }
-      const {
-        main,
-        cross
-      } = getAlignmentSides(currentPlacement, rects, await (platform.isRTL == null ? void 0 : platform.isRTL(elements.floating)));
+      const alignmentSides = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignmentSides)(currentPlacement, rects, await (platform.isRTL == null ? void 0 : platform.isRTL(elements.floating)));
 
       // Make `computeCoords` start from the right place.
       if (placement !== currentPlacement) {
         return {
           reset: {
-            placement: placements[0]
+            placement: placements$1[0]
           }
         };
       }
-      const currentOverflows = [overflow[getSide(currentPlacement)], overflow[main], overflow[cross]];
+      const currentOverflows = [overflow[(0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(currentPlacement)], overflow[alignmentSides[0]], overflow[alignmentSides[1]]];
       const allOverflows = [...(((_middlewareData$autoP2 = middlewareData.autoPlacement) == null ? void 0 : _middlewareData$autoP2.overflows) || []), {
         placement: currentPlacement,
         overflows: currentOverflows
       }];
-      const nextPlacement = placements[currentIndex + 1];
+      const nextPlacement = placements$1[currentIndex + 1];
 
       // There are more placements to check.
       if (nextPlacement) {
@@ -49389,7 +49365,7 @@ const autoPlacement = function (options) {
         };
       }
       const placementsSortedByMostSpace = allOverflows.map(d => {
-        const alignment = getAlignment(d.placement);
+        const alignment = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignment)(d.placement);
         return [d.placement, alignment && crossAxis ?
         // Check along the mainAxis and main crossAxis side.
         d.overflows.slice(0, 2).reduce((acc, v) => acc + v, 0) :
@@ -49399,7 +49375,7 @@ const autoPlacement = function (options) {
       const placementsThatFitOnEachSide = placementsSortedByMostSpace.filter(d => d[2].slice(0,
       // Aligned placements should not check their opposite crossAxis
       // side.
-      getAlignment(d[0]) ? 2 : 3).every(v => v <= 0));
+      (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignment)(d[0]) ? 2 : 3).every(v => v <= 0));
       const resetPlacement = ((_placementsThatFitOnE = placementsThatFitOnEachSide[0]) == null ? void 0 : _placementsThatFitOnE[0]) || placementsSortedByMostSpace[0][0];
       if (resetPlacement !== placement) {
         return {
@@ -49417,40 +49393,6 @@ const autoPlacement = function (options) {
   };
 };
 
-function getExpandedPlacements(placement) {
-  const oppositePlacement = getOppositePlacement(placement);
-  return [getOppositeAlignmentPlacement(placement), oppositePlacement, getOppositeAlignmentPlacement(oppositePlacement)];
-}
-
-function getSideList(side, isStart, rtl) {
-  const lr = ['left', 'right'];
-  const rl = ['right', 'left'];
-  const tb = ['top', 'bottom'];
-  const bt = ['bottom', 'top'];
-  switch (side) {
-    case 'top':
-    case 'bottom':
-      if (rtl) return isStart ? rl : lr;
-      return isStart ? lr : rl;
-    case 'left':
-    case 'right':
-      return isStart ? tb : bt;
-    default:
-      return [];
-  }
-}
-function getOppositeAxisPlacements(placement, flipAlignment, direction, rtl) {
-  const alignment = getAlignment(placement);
-  let list = getSideList(getSide(placement), direction === 'start', rtl);
-  if (alignment) {
-    list = list.map(side => side + "-" + alignment);
-    if (flipAlignment) {
-      list = list.concat(list.map(getOppositeAlignmentPlacement));
-    }
-  }
-  return list;
-}
-
 /**
  * Optimizes the visibility of the floating element by flipping the `placement`
  * in order to keep it in view when the preferred placement(s) will overflow the
@@ -49465,7 +49407,7 @@ const flip = function (options) {
     name: 'flip',
     options,
     async fn(state) {
-      var _middlewareData$flip;
+      var _middlewareData$arrow, _middlewareData$flip;
       const {
         placement,
         middlewareData,
@@ -49482,13 +49424,21 @@ const flip = function (options) {
         fallbackAxisSideDirection = 'none',
         flipAlignment = true,
         ...detectOverflowOptions
-      } = options;
-      const side = getSide(placement);
-      const isBasePlacement = getSide(initialPlacement) === initialPlacement;
+      } = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(options, state);
+
+      // If a reset by the arrow was caused due to an alignment offset being
+      // added, we should skip any logic now since `flip()` has already done its
+      // work.
+      // https://github.com/floating-ui/floating-ui/issues/2549#issuecomment-1719601643
+      if ((_middlewareData$arrow = middlewareData.arrow) != null && _middlewareData$arrow.alignmentOffset) {
+        return {};
+      }
+      const side = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(placement);
+      const isBasePlacement = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(initialPlacement) === initialPlacement;
       const rtl = await (platform.isRTL == null ? void 0 : platform.isRTL(elements.floating));
-      const fallbackPlacements = specifiedFallbackPlacements || (isBasePlacement || !flipAlignment ? [getOppositePlacement(initialPlacement)] : getExpandedPlacements(initialPlacement));
+      const fallbackPlacements = specifiedFallbackPlacements || (isBasePlacement || !flipAlignment ? [(0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getOppositePlacement)(initialPlacement)] : (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getExpandedPlacements)(initialPlacement));
       if (!specifiedFallbackPlacements && fallbackAxisSideDirection !== 'none') {
-        fallbackPlacements.push(...getOppositeAxisPlacements(initialPlacement, flipAlignment, fallbackAxisSideDirection, rtl));
+        fallbackPlacements.push(...(0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getOppositeAxisPlacements)(initialPlacement, flipAlignment, fallbackAxisSideDirection, rtl));
       }
       const placements = [initialPlacement, ...fallbackPlacements];
       const overflow = await detectOverflow(state, detectOverflowOptions);
@@ -49498,11 +49448,8 @@ const flip = function (options) {
         overflows.push(overflow[side]);
       }
       if (checkCrossAxis) {
-        const {
-          main,
-          cross
-        } = getAlignmentSides(placement, rects, rtl);
-        overflows.push(overflow[main], overflow[cross]);
+        const sides = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignmentSides)(placement, rects, rtl);
+        overflows.push(overflow[sides[0]], overflow[sides[1]]);
       }
       overflowsData = [...overflowsData, {
         placement,
@@ -49570,7 +49517,7 @@ function getSideOffsets(overflow, rect) {
   };
 }
 function isAnySideFullyClipped(overflow) {
-  return sides.some(side => overflow[side] >= 0);
+  return _floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.sides.some(side => overflow[side] >= 0);
 }
 /**
  * Provides data to hide the floating element in applicable situations, such as
@@ -49586,12 +49533,12 @@ const hide = function (options) {
     options,
     async fn(state) {
       const {
-        strategy = 'referenceHidden',
-        ...detectOverflowOptions
-      } = options;
-      const {
         rects
       } = state;
+      const {
+        strategy = 'referenceHidden',
+        ...detectOverflowOptions
+      } = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(options, state);
       switch (strategy) {
         case 'referenceHidden':
           {
@@ -49631,10 +49578,10 @@ const hide = function (options) {
 };
 
 function getBoundingRect(rects) {
-  const minX = min(...rects.map(rect => rect.left));
-  const minY = min(...rects.map(rect => rect.top));
-  const maxX = max(...rects.map(rect => rect.right));
-  const maxY = max(...rects.map(rect => rect.bottom));
+  const minX = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.min)(...rects.map(rect => rect.left));
+  const minY = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.min)(...rects.map(rect => rect.top));
+  const maxX = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.max)(...rects.map(rect => rect.right));
+  const maxY = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.max)(...rects.map(rect => rect.bottom));
   return {
     x: minX,
     y: minY,
@@ -49655,7 +49602,7 @@ function getRectsByLine(rects) {
     }
     prevRect = rect;
   }
-  return groups.map(rect => rectToClientRect(getBoundingRect(rect)));
+  return groups.map(rect => (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.rectToClientRect)(getBoundingRect(rect)));
 }
 /**
  * Provides improved positioning for inline reference elements that can span
@@ -49684,11 +49631,11 @@ const inline = function (options) {
         padding = 2,
         x,
         y
-      } = options;
+      } = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(options, state);
       const nativeClientRects = Array.from((await (platform.getClientRects == null ? void 0 : platform.getClientRects(elements.reference))) || []);
       const clientRects = getRectsByLine(nativeClientRects);
-      const fallback = rectToClientRect(getBoundingRect(nativeClientRects));
-      const paddingObject = getSideObjectFromPadding(padding);
+      const fallback = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.rectToClientRect)(getBoundingRect(nativeClientRects));
+      const paddingObject = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getPaddingObject)(padding);
       function getBoundingClientRect() {
         // There are two rects and they are disjoined.
         if (clientRects.length === 2 && clientRects[0].left > clientRects[1].right && x != null && y != null) {
@@ -49698,10 +49645,10 @@ const inline = function (options) {
 
         // There are 2 or more connected rects.
         if (clientRects.length >= 2) {
-          if (getMainAxisFromPlacement(placement) === 'x') {
+          if ((0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSideAxis)(placement) === 'y') {
             const firstRect = clientRects[0];
             const lastRect = clientRects[clientRects.length - 1];
-            const isTop = getSide(placement) === 'top';
+            const isTop = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(placement) === 'top';
             const top = firstRect.top;
             const bottom = lastRect.bottom;
             const left = isTop ? firstRect.left : lastRect.left;
@@ -49719,9 +49666,9 @@ const inline = function (options) {
               y: top
             };
           }
-          const isLeftSide = getSide(placement) === 'left';
-          const maxRight = max(...clientRects.map(rect => rect.right));
-          const minLeft = min(...clientRects.map(rect => rect.left));
+          const isLeftSide = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(placement) === 'left';
+          const maxRight = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.max)(...clientRects.map(rect => rect.right));
+          const minLeft = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.min)(...clientRects.map(rect => rect.left));
           const measureRects = clientRects.filter(rect => isLeftSide ? rect.left === minLeft : rect.right === maxRight);
           const top = measureRects[0].top;
           const bottom = measureRects[measureRects.length - 1].bottom;
@@ -49761,21 +49708,22 @@ const inline = function (options) {
   };
 };
 
-async function convertValueToCoords(state, value) {
+// For type backwards-compatibility, the `OffsetOptions` type was also
+// Derivable.
+
+async function convertValueToCoords(state, options) {
   const {
     placement,
     platform,
     elements
   } = state;
   const rtl = await (platform.isRTL == null ? void 0 : platform.isRTL(elements.floating));
-  const side = getSide(placement);
-  const alignment = getAlignment(placement);
-  const isVertical = getMainAxisFromPlacement(placement) === 'x';
+  const side = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(placement);
+  const alignment = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignment)(placement);
+  const isVertical = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSideAxis)(placement) === 'y';
   const mainAxisMulti = ['left', 'top'].includes(side) ? -1 : 1;
   const crossAxisMulti = rtl && isVertical ? -1 : 1;
-  const rawValue = typeof value === 'function' ? value(state) : value;
-
-  // eslint-disable-next-line prefer-const
+  const rawValue = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(options, state);
   let {
     mainAxis,
     crossAxis,
@@ -49809,31 +49757,39 @@ async function convertValueToCoords(state, value) {
  * object may be passed.
  * @see https://floating-ui.com/docs/offset
  */
-const offset = function (value) {
-  if (value === void 0) {
-    value = 0;
+const offset = function (options) {
+  if (options === void 0) {
+    options = 0;
   }
   return {
     name: 'offset',
-    options: value,
+    options,
     async fn(state) {
+      var _middlewareData$offse, _middlewareData$arrow;
       const {
         x,
-        y
+        y,
+        placement,
+        middlewareData
       } = state;
-      const diffCoords = await convertValueToCoords(state, value);
+      const diffCoords = await convertValueToCoords(state, options);
+
+      // If the placement is the same and the arrow caused an alignment offset
+      // then we don't need to change the positioning coordinates.
+      if (placement === ((_middlewareData$offse = middlewareData.offset) == null ? void 0 : _middlewareData$offse.placement) && (_middlewareData$arrow = middlewareData.arrow) != null && _middlewareData$arrow.alignmentOffset) {
+        return {};
+      }
       return {
         x: x + diffCoords.x,
         y: y + diffCoords.y,
-        data: diffCoords
+        data: {
+          ...diffCoords,
+          placement
+        }
       };
     }
   };
 };
-
-function getCrossAxis(axis) {
-  return axis === 'x' ? 'y' : 'x';
-}
 
 /**
  * Optimizes the visibility of the floating element by shifting it in order to
@@ -49869,14 +49825,14 @@ const shift = function (options) {
           }
         },
         ...detectOverflowOptions
-      } = options;
+      } = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(options, state);
       const coords = {
         x,
         y
       };
       const overflow = await detectOverflow(state, detectOverflowOptions);
-      const mainAxis = getMainAxisFromPlacement(getSide(placement));
-      const crossAxis = getCrossAxis(mainAxis);
+      const crossAxis = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSideAxis)((0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(placement));
+      const mainAxis = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getOppositeAxis)(crossAxis);
       let mainAxisCoord = coords[mainAxis];
       let crossAxisCoord = coords[crossAxis];
       if (checkMainAxis) {
@@ -49884,14 +49840,14 @@ const shift = function (options) {
         const maxSide = mainAxis === 'y' ? 'bottom' : 'right';
         const min = mainAxisCoord + overflow[minSide];
         const max = mainAxisCoord - overflow[maxSide];
-        mainAxisCoord = within(min, mainAxisCoord, max);
+        mainAxisCoord = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.clamp)(min, mainAxisCoord, max);
       }
       if (checkCrossAxis) {
         const minSide = crossAxis === 'y' ? 'top' : 'left';
         const maxSide = crossAxis === 'y' ? 'bottom' : 'right';
         const min = crossAxisCoord + overflow[minSide];
         const max = crossAxisCoord - overflow[maxSide];
-        crossAxisCoord = within(min, crossAxisCoord, max);
+        crossAxisCoord = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.clamp)(min, crossAxisCoord, max);
       }
       const limitedCoords = limiter.fn({
         ...state,
@@ -49929,16 +49885,16 @@ const limitShift = function (options) {
         offset = 0,
         mainAxis: checkMainAxis = true,
         crossAxis: checkCrossAxis = true
-      } = options;
+      } = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(options, state);
       const coords = {
         x,
         y
       };
-      const mainAxis = getMainAxisFromPlacement(placement);
-      const crossAxis = getCrossAxis(mainAxis);
+      const crossAxis = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSideAxis)(placement);
+      const mainAxis = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getOppositeAxis)(crossAxis);
       let mainAxisCoord = coords[mainAxis];
       let crossAxisCoord = coords[crossAxis];
-      const rawOffset = typeof offset === 'function' ? offset(state) : offset;
+      const rawOffset = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(offset, state);
       const computedOffset = typeof rawOffset === 'number' ? {
         mainAxis: rawOffset,
         crossAxis: 0
@@ -49960,7 +49916,7 @@ const limitShift = function (options) {
       if (checkCrossAxis) {
         var _middlewareData$offse, _middlewareData$offse2;
         const len = mainAxis === 'y' ? 'width' : 'height';
-        const isOriginSide = ['top', 'left'].includes(getSide(placement));
+        const isOriginSide = ['top', 'left'].includes((0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(placement));
         const limitMin = rects.reference[crossAxis] - rects.floating[len] + (isOriginSide ? ((_middlewareData$offse = middlewareData.offset) == null ? void 0 : _middlewareData$offse[crossAxis]) || 0 : 0) + (isOriginSide ? 0 : computedOffset.crossAxis);
         const limitMax = rects.reference[crossAxis] + rects.reference[len] + (isOriginSide ? 0 : ((_middlewareData$offse2 = middlewareData.offset) == null ? void 0 : _middlewareData$offse2[crossAxis]) || 0) - (isOriginSide ? computedOffset.crossAxis : 0);
         if (crossAxisCoord < limitMin) {
@@ -50000,12 +49956,11 @@ const size = function (options) {
       const {
         apply = () => {},
         ...detectOverflowOptions
-      } = options;
+      } = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.evaluate)(options, state);
       const overflow = await detectOverflow(state, detectOverflowOptions);
-      const side = getSide(placement);
-      const alignment = getAlignment(placement);
-      const axis = getMainAxisFromPlacement(placement);
-      const isXAxis = axis === 'x';
+      const side = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSide)(placement);
+      const alignment = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getAlignment)(placement);
+      const isYAxis = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.getSideAxis)(placement) === 'y';
       const {
         width,
         height
@@ -50024,22 +49979,22 @@ const size = function (options) {
       const noShift = !state.middlewareData.shift;
       let availableHeight = overflowAvailableHeight;
       let availableWidth = overflowAvailableWidth;
-      if (isXAxis) {
+      if (isYAxis) {
         const maximumClippingWidth = width - overflow.left - overflow.right;
-        availableWidth = alignment || noShift ? min(overflowAvailableWidth, maximumClippingWidth) : maximumClippingWidth;
+        availableWidth = alignment || noShift ? (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.min)(overflowAvailableWidth, maximumClippingWidth) : maximumClippingWidth;
       } else {
         const maximumClippingHeight = height - overflow.top - overflow.bottom;
-        availableHeight = alignment || noShift ? min(overflowAvailableHeight, maximumClippingHeight) : maximumClippingHeight;
+        availableHeight = alignment || noShift ? (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.min)(overflowAvailableHeight, maximumClippingHeight) : maximumClippingHeight;
       }
       if (noShift && !alignment) {
-        const xMin = max(overflow.left, 0);
-        const xMax = max(overflow.right, 0);
-        const yMin = max(overflow.top, 0);
-        const yMax = max(overflow.bottom, 0);
-        if (isXAxis) {
-          availableWidth = width - 2 * (xMin !== 0 || xMax !== 0 ? xMin + xMax : max(overflow.left, overflow.right));
+        const xMin = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.max)(overflow.left, 0);
+        const xMax = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.max)(overflow.right, 0);
+        const yMin = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.max)(overflow.top, 0);
+        const yMax = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.max)(overflow.bottom, 0);
+        if (isYAxis) {
+          availableWidth = width - 2 * (xMin !== 0 || xMax !== 0 ? xMin + xMax : (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.max)(overflow.left, overflow.right));
         } else {
-          availableHeight = height - 2 * (yMin !== 0 || yMax !== 0 ? yMin + yMax : max(overflow.top, overflow.bottom));
+          availableHeight = height - 2 * (yMin !== 0 || yMax !== 0 ? yMin + yMax : (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_0__.max)(overflow.top, overflow.bottom));
         }
       }
       await apply({
@@ -50065,138 +50020,48 @@ const size = function (options) {
 
 /***/ }),
 
-/***/ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.mjs":
-/*!************************************************************************!*\
-  !*** ./node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.mjs ***!
-  \************************************************************************/
+/***/ "./node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs":
+/*!****************************************************************!*\
+  !*** ./node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs ***!
+  \****************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   arrow: () => (/* reexport safe */ _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.arrow),
-/* harmony export */   autoPlacement: () => (/* reexport safe */ _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.autoPlacement),
+/* harmony export */   arrow: () => (/* binding */ arrow),
+/* harmony export */   autoPlacement: () => (/* binding */ autoPlacement),
 /* harmony export */   autoUpdate: () => (/* binding */ autoUpdate),
 /* harmony export */   computePosition: () => (/* binding */ computePosition),
 /* harmony export */   detectOverflow: () => (/* reexport safe */ _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.detectOverflow),
-/* harmony export */   flip: () => (/* reexport safe */ _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.flip),
-/* harmony export */   getOverflowAncestors: () => (/* binding */ getOverflowAncestors),
-/* harmony export */   hide: () => (/* reexport safe */ _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.hide),
-/* harmony export */   inline: () => (/* reexport safe */ _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.inline),
-/* harmony export */   limitShift: () => (/* reexport safe */ _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.limitShift),
+/* harmony export */   flip: () => (/* binding */ flip),
+/* harmony export */   getOverflowAncestors: () => (/* reexport safe */ _floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getOverflowAncestors),
+/* harmony export */   hide: () => (/* binding */ hide),
+/* harmony export */   inline: () => (/* binding */ inline),
+/* harmony export */   limitShift: () => (/* binding */ limitShift),
 /* harmony export */   offset: () => (/* reexport safe */ _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.offset),
 /* harmony export */   platform: () => (/* binding */ platform),
-/* harmony export */   shift: () => (/* reexport safe */ _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.shift),
-/* harmony export */   size: () => (/* reexport safe */ _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.size)
+/* harmony export */   shift: () => (/* binding */ shift),
+/* harmony export */   size: () => (/* binding */ size)
 /* harmony export */ });
-/* harmony import */ var _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @floating-ui/core */ "./node_modules/@floating-ui/core/dist/floating-ui.core.browser.mjs");
+/* harmony import */ var _floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @floating-ui/utils */ "./node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs");
+/* harmony import */ var _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @floating-ui/core */ "./node_modules/@floating-ui/core/dist/floating-ui.core.mjs");
+/* harmony import */ var _floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @floating-ui/utils/dom */ "./node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs");
 
 
 
-function getWindow(node) {
-  var _node$ownerDocument;
-  return ((_node$ownerDocument = node.ownerDocument) == null ? void 0 : _node$ownerDocument.defaultView) || window;
-}
 
-function getComputedStyle$1(element) {
-  return getWindow(element).getComputedStyle(element);
-}
 
-function isNode(value) {
-  return value instanceof getWindow(value).Node;
-}
-function getNodeName(node) {
-  return isNode(node) ? (node.nodeName || '').toLowerCase() : '';
-}
-
-let uaString;
-function getUAString() {
-  if (uaString) {
-    return uaString;
-  }
-  const uaData = navigator.userAgentData;
-  if (uaData && Array.isArray(uaData.brands)) {
-    uaString = uaData.brands.map(item => item.brand + "/" + item.version).join(' ');
-    return uaString;
-  }
-  return navigator.userAgent;
-}
-
-function isHTMLElement(value) {
-  return value instanceof getWindow(value).HTMLElement;
-}
-function isElement(value) {
-  return value instanceof getWindow(value).Element;
-}
-function isShadowRoot(node) {
-  // Browsers without `ShadowRoot` support.
-  if (typeof ShadowRoot === 'undefined') {
-    return false;
-  }
-  const OwnElement = getWindow(node).ShadowRoot;
-  return node instanceof OwnElement || node instanceof ShadowRoot;
-}
-function isOverflowElement(element) {
-  const {
-    overflow,
-    overflowX,
-    overflowY,
-    display
-  } = getComputedStyle$1(element);
-  return /auto|scroll|overlay|hidden|clip/.test(overflow + overflowY + overflowX) && !['inline', 'contents'].includes(display);
-}
-function isTableElement(element) {
-  return ['table', 'td', 'th'].includes(getNodeName(element));
-}
-function isContainingBlock(element) {
-  // TODO: Try to use feature detection here instead.
-  const isFirefox = /firefox/i.test(getUAString());
-  const css = getComputedStyle$1(element);
-  const backdropFilter = css.backdropFilter || css.WebkitBackdropFilter;
-
-  // This is non-exhaustive but covers the most common CSS properties that
-  // create a containing block.
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
-  return css.transform !== 'none' || css.perspective !== 'none' || (backdropFilter ? backdropFilter !== 'none' : false) || isFirefox && css.willChange === 'filter' || isFirefox && (css.filter ? css.filter !== 'none' : false) || ['transform', 'perspective'].some(value => css.willChange.includes(value)) || ['paint', 'layout', 'strict', 'content'].some(value => {
-    // Add type check for old browsers.
-    const contain = css.contain;
-    return contain != null ? contain.includes(value) : false;
-  });
-}
-
-/**
- * Determines whether or not `.getBoundingClientRect()` is affected by visual
- * viewport offsets. In Safari, the `x`/`y` offsets are values relative to the
- * visual viewport, while in other engines, they are values relative to the
- * layout viewport.
- */
-function isClientRectVisualViewportBased() {
-  // TODO: Try to use feature detection here instead. Feature detection for
-  // this can fail in various ways, making the userAgent check the most
-  // reliable:
-  // • Always-visible scrollbar or not
-  // • Width of <html>
-
-  // Is Safari.
-  return /^((?!chrome|android).)*safari/i.test(getUAString());
-}
-function isLastTraversableNode(node) {
-  return ['html', 'body', '#document'].includes(getNodeName(node));
-}
-
-const min = Math.min;
-const max = Math.max;
-const round = Math.round;
 
 function getCssDimensions(element) {
-  const css = getComputedStyle$1(element);
+  const css = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getComputedStyle)(element);
   // In testing environments, the `width` and `height` properties are empty
   // strings for SVG elements, returning NaN. Fallback to `0` in this case.
   let width = parseFloat(css.width) || 0;
   let height = parseFloat(css.height) || 0;
-  const hasOffset = isHTMLElement(element);
+  const hasOffset = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isHTMLElement)(element);
   const offsetWidth = hasOffset ? element.offsetWidth : width;
   const offsetHeight = hasOffset ? element.offsetHeight : height;
-  const shouldFallback = round(width) !== offsetWidth || round(height) !== offsetHeight;
+  const shouldFallback = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.round)(width) !== offsetWidth || (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.round)(height) !== offsetHeight;
   if (shouldFallback) {
     width = offsetWidth;
     height = offsetHeight;
@@ -50204,31 +50069,27 @@ function getCssDimensions(element) {
   return {
     width,
     height,
-    fallback: shouldFallback
+    $: shouldFallback
   };
 }
 
 function unwrapElement(element) {
-  return !isElement(element) ? element.contextElement : element;
+  return !(0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isElement)(element) ? element.contextElement : element;
 }
 
-const FALLBACK_SCALE = {
-  x: 1,
-  y: 1
-};
 function getScale(element) {
   const domElement = unwrapElement(element);
-  if (!isHTMLElement(domElement)) {
-    return FALLBACK_SCALE;
+  if (!(0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isHTMLElement)(domElement)) {
+    return (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.createCoords)(1);
   }
   const rect = domElement.getBoundingClientRect();
   const {
     width,
     height,
-    fallback
+    $
   } = getCssDimensions(domElement);
-  let x = (fallback ? round(rect.width) : rect.width) / width;
-  let y = (fallback ? round(rect.height) : rect.height) / height;
+  let x = ($ ? (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.round)(rect.width) : rect.width) / width;
+  let y = ($ ? (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.round)(rect.height) : rect.height) / height;
 
   // 0, NaN, or Infinity should always fallback to 1.
 
@@ -50244,8 +50105,28 @@ function getScale(element) {
   };
 }
 
+const noOffsets = /*#__PURE__*/(0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.createCoords)(0);
+function getVisualOffsets(element) {
+  const win = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getWindow)(element);
+  if (!(0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isWebKit)() || !win.visualViewport) {
+    return noOffsets;
+  }
+  return {
+    x: win.visualViewport.offsetLeft,
+    y: win.visualViewport.offsetTop
+  };
+}
+function shouldAddVisualOffsets(element, isFixed, floatingOffsetParent) {
+  if (isFixed === void 0) {
+    isFixed = false;
+  }
+  if (!floatingOffsetParent || isFixed && floatingOffsetParent !== (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getWindow)(element)) {
+    return false;
+  }
+  return isFixed;
+}
+
 function getBoundingClientRect(element, includeScale, isFixedStrategy, offsetParent) {
-  var _win$visualViewport, _win$visualViewport2;
   if (includeScale === void 0) {
     includeScale = false;
   }
@@ -50254,42 +50135,43 @@ function getBoundingClientRect(element, includeScale, isFixedStrategy, offsetPar
   }
   const clientRect = element.getBoundingClientRect();
   const domElement = unwrapElement(element);
-  let scale = FALLBACK_SCALE;
+  let scale = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.createCoords)(1);
   if (includeScale) {
     if (offsetParent) {
-      if (isElement(offsetParent)) {
+      if ((0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isElement)(offsetParent)) {
         scale = getScale(offsetParent);
       }
     } else {
       scale = getScale(element);
     }
   }
-  const win = domElement ? getWindow(domElement) : window;
-  const addVisualOffsets = isClientRectVisualViewportBased() && isFixedStrategy;
-  let x = (clientRect.left + (addVisualOffsets ? ((_win$visualViewport = win.visualViewport) == null ? void 0 : _win$visualViewport.offsetLeft) || 0 : 0)) / scale.x;
-  let y = (clientRect.top + (addVisualOffsets ? ((_win$visualViewport2 = win.visualViewport) == null ? void 0 : _win$visualViewport2.offsetTop) || 0 : 0)) / scale.y;
+  const visualOffsets = shouldAddVisualOffsets(domElement, isFixedStrategy, offsetParent) ? getVisualOffsets(domElement) : (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.createCoords)(0);
+  let x = (clientRect.left + visualOffsets.x) / scale.x;
+  let y = (clientRect.top + visualOffsets.y) / scale.y;
   let width = clientRect.width / scale.x;
   let height = clientRect.height / scale.y;
   if (domElement) {
-    const win = getWindow(domElement);
-    const offsetWin = offsetParent && isElement(offsetParent) ? getWindow(offsetParent) : offsetParent;
-    let currentIFrame = win.frameElement;
-    while (currentIFrame && offsetParent && offsetWin !== win) {
+    const win = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getWindow)(domElement);
+    const offsetWin = offsetParent && (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isElement)(offsetParent) ? (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getWindow)(offsetParent) : offsetParent;
+    let currentWin = win;
+    let currentIFrame = currentWin.frameElement;
+    while (currentIFrame && offsetParent && offsetWin !== currentWin) {
       const iframeScale = getScale(currentIFrame);
       const iframeRect = currentIFrame.getBoundingClientRect();
-      const css = getComputedStyle(currentIFrame);
-      iframeRect.x += (currentIFrame.clientLeft + parseFloat(css.paddingLeft)) * iframeScale.x;
-      iframeRect.y += (currentIFrame.clientTop + parseFloat(css.paddingTop)) * iframeScale.y;
+      const css = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getComputedStyle)(currentIFrame);
+      const left = iframeRect.left + (currentIFrame.clientLeft + parseFloat(css.paddingLeft)) * iframeScale.x;
+      const top = iframeRect.top + (currentIFrame.clientTop + parseFloat(css.paddingTop)) * iframeScale.y;
       x *= iframeScale.x;
       y *= iframeScale.y;
       width *= iframeScale.x;
       height *= iframeScale.y;
-      x += iframeRect.x;
-      y += iframeRect.y;
-      currentIFrame = getWindow(currentIFrame).frameElement;
+      x += left;
+      y += top;
+      currentWin = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getWindow)(currentIFrame);
+      currentIFrame = currentWin.frameElement;
     }
   }
-  return (0,_floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.rectToClientRect)({
+  return (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.rectToClientRect)({
     width,
     height,
     x,
@@ -50297,51 +50179,42 @@ function getBoundingClientRect(element, includeScale, isFixedStrategy, offsetPar
   });
 }
 
-function getDocumentElement(node) {
-  return ((isNode(node) ? node.ownerDocument : node.document) || window.document).documentElement;
-}
-
-function getNodeScroll(element) {
-  if (isElement(element)) {
-    return {
-      scrollLeft: element.scrollLeft,
-      scrollTop: element.scrollTop
-    };
-  }
-  return {
-    scrollLeft: element.pageXOffset,
-    scrollTop: element.pageYOffset
-  };
+const topLayerSelectors = [':popover-open', ':modal'];
+function isTopLayer(floating) {
+  return topLayerSelectors.some(selector => {
+    try {
+      return floating.matches(selector);
+    } catch (e) {
+      return false;
+    }
+  });
 }
 
 function convertOffsetParentRelativeRectToViewportRelativeRect(_ref) {
   let {
+    elements,
     rect,
     offsetParent,
     strategy
   } = _ref;
-  const isOffsetParentAnElement = isHTMLElement(offsetParent);
-  const documentElement = getDocumentElement(offsetParent);
-  if (offsetParent === documentElement) {
+  const isFixed = strategy === 'fixed';
+  const documentElement = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getDocumentElement)(offsetParent);
+  const topLayer = elements ? isTopLayer(elements.floating) : false;
+  if (offsetParent === documentElement || topLayer && isFixed) {
     return rect;
   }
   let scroll = {
     scrollLeft: 0,
     scrollTop: 0
   };
-  let scale = {
-    x: 1,
-    y: 1
-  };
-  const offsets = {
-    x: 0,
-    y: 0
-  };
-  if (isOffsetParentAnElement || !isOffsetParentAnElement && strategy !== 'fixed') {
-    if (getNodeName(offsetParent) !== 'body' || isOverflowElement(documentElement)) {
-      scroll = getNodeScroll(offsetParent);
+  let scale = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.createCoords)(1);
+  const offsets = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.createCoords)(0);
+  const isOffsetParentAnElement = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isHTMLElement)(offsetParent);
+  if (isOffsetParentAnElement || !isOffsetParentAnElement && !isFixed) {
+    if ((0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getNodeName)(offsetParent) !== 'body' || (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isOverflowElement)(documentElement)) {
+      scroll = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getNodeScroll)(offsetParent);
     }
-    if (isHTMLElement(offsetParent)) {
+    if ((0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isHTMLElement)(offsetParent)) {
       const offsetRect = getBoundingClientRect(offsetParent);
       scale = getScale(offsetParent);
       offsets.x = offsetRect.x + offsetParent.clientLeft;
@@ -50356,24 +50229,28 @@ function convertOffsetParentRelativeRectToViewportRelativeRect(_ref) {
   };
 }
 
+function getClientRects(element) {
+  return Array.from(element.getClientRects());
+}
+
 function getWindowScrollBarX(element) {
   // If <html> has a CSS width greater than the viewport, then this will be
   // incorrect for RTL.
-  return getBoundingClientRect(getDocumentElement(element)).left + getNodeScroll(element).scrollLeft;
+  return getBoundingClientRect((0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getDocumentElement)(element)).left + (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getNodeScroll)(element).scrollLeft;
 }
 
 // Gets the entire size of the scrollable document area, even extending outside
 // of the `<html>` and `<body>` rect bounds if horizontally scrollable.
 function getDocumentRect(element) {
-  const html = getDocumentElement(element);
-  const scroll = getNodeScroll(element);
+  const html = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getDocumentElement)(element);
+  const scroll = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getNodeScroll)(element);
   const body = element.ownerDocument.body;
-  const width = max(html.scrollWidth, html.clientWidth, body.scrollWidth, body.clientWidth);
-  const height = max(html.scrollHeight, html.clientHeight, body.scrollHeight, body.clientHeight);
+  const width = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.max)(html.scrollWidth, html.clientWidth, body.scrollWidth, body.clientWidth);
+  const height = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.max)(html.scrollHeight, html.clientHeight, body.scrollHeight, body.clientHeight);
   let x = -scroll.scrollLeft + getWindowScrollBarX(element);
   const y = -scroll.scrollTop;
-  if (getComputedStyle$1(body).direction === 'rtl') {
-    x += max(html.clientWidth, body.clientWidth) - width;
+  if ((0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getComputedStyle)(body).direction === 'rtl') {
+    x += (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.max)(html.clientWidth, body.clientWidth) - width;
   }
   return {
     width,
@@ -50383,52 +50260,9 @@ function getDocumentRect(element) {
   };
 }
 
-function getParentNode(node) {
-  if (getNodeName(node) === 'html') {
-    return node;
-  }
-  const result =
-  // Step into the shadow DOM of the parent of a slotted node.
-  node.assignedSlot ||
-  // DOM Element detected.
-  node.parentNode ||
-  // ShadowRoot detected.
-  isShadowRoot(node) && node.host ||
-  // Fallback.
-  getDocumentElement(node);
-  return isShadowRoot(result) ? result.host : result;
-}
-
-function getNearestOverflowAncestor(node) {
-  const parentNode = getParentNode(node);
-  if (isLastTraversableNode(parentNode)) {
-    // `getParentNode` will never return a `Document` due to the fallback
-    // check, so it's either the <html> or <body> element.
-    return parentNode.ownerDocument.body;
-  }
-  if (isHTMLElement(parentNode) && isOverflowElement(parentNode)) {
-    return parentNode;
-  }
-  return getNearestOverflowAncestor(parentNode);
-}
-
-function getOverflowAncestors(node, list) {
-  var _node$ownerDocument;
-  if (list === void 0) {
-    list = [];
-  }
-  const scrollableAncestor = getNearestOverflowAncestor(node);
-  const isBody = scrollableAncestor === ((_node$ownerDocument = node.ownerDocument) == null ? void 0 : _node$ownerDocument.body);
-  const win = getWindow(scrollableAncestor);
-  if (isBody) {
-    return list.concat(win, win.visualViewport || [], isOverflowElement(scrollableAncestor) ? scrollableAncestor : []);
-  }
-  return list.concat(scrollableAncestor, getOverflowAncestors(scrollableAncestor));
-}
-
 function getViewportRect(element, strategy) {
-  const win = getWindow(element);
-  const html = getDocumentElement(element);
+  const win = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getWindow)(element);
+  const html = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getDocumentElement)(element);
   const visualViewport = win.visualViewport;
   let width = html.clientWidth;
   let height = html.clientHeight;
@@ -50437,7 +50271,7 @@ function getViewportRect(element, strategy) {
   if (visualViewport) {
     width = visualViewport.width;
     height = visualViewport.height;
-    const visualViewportBased = isClientRectVisualViewportBased();
+    const visualViewportBased = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isWebKit)();
     if (!visualViewportBased || visualViewportBased && strategy === 'fixed') {
       x = visualViewport.offsetLeft;
       y = visualViewport.offsetTop;
@@ -50456,10 +50290,7 @@ function getInnerBoundingClientRect(element, strategy) {
   const clientRect = getBoundingClientRect(element, true, strategy === 'fixed');
   const top = clientRect.top + element.clientTop;
   const left = clientRect.left + element.clientLeft;
-  const scale = isHTMLElement(element) ? getScale(element) : {
-    x: 1,
-    y: 1
-  };
+  const scale = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isHTMLElement)(element) ? getScale(element) : (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.createCoords)(1);
   const width = element.clientWidth * scale.x;
   const height = element.clientHeight * scale.y;
   const x = left * scale.x;
@@ -50476,29 +50307,25 @@ function getClientRectFromClippingAncestor(element, clippingAncestor, strategy) 
   if (clippingAncestor === 'viewport') {
     rect = getViewportRect(element, strategy);
   } else if (clippingAncestor === 'document') {
-    rect = getDocumentRect(getDocumentElement(element));
-  } else if (isElement(clippingAncestor)) {
+    rect = getDocumentRect((0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getDocumentElement)(element));
+  } else if ((0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isElement)(clippingAncestor)) {
     rect = getInnerBoundingClientRect(clippingAncestor, strategy);
   } else {
-    const mutableRect = {
-      ...clippingAncestor
+    const visualOffsets = getVisualOffsets(element);
+    rect = {
+      ...clippingAncestor,
+      x: clippingAncestor.x - visualOffsets.x,
+      y: clippingAncestor.y - visualOffsets.y
     };
-    if (isClientRectVisualViewportBased()) {
-      var _win$visualViewport, _win$visualViewport2;
-      const win = getWindow(element);
-      mutableRect.x -= ((_win$visualViewport = win.visualViewport) == null ? void 0 : _win$visualViewport.offsetLeft) || 0;
-      mutableRect.y -= ((_win$visualViewport2 = win.visualViewport) == null ? void 0 : _win$visualViewport2.offsetTop) || 0;
-    }
-    rect = mutableRect;
   }
-  return (0,_floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.rectToClientRect)(rect);
+  return (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.rectToClientRect)(rect);
 }
 function hasFixedPositionAncestor(element, stopNode) {
-  const parentNode = getParentNode(element);
-  if (parentNode === stopNode || !isElement(parentNode) || isLastTraversableNode(parentNode)) {
+  const parentNode = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getParentNode)(element);
+  if (parentNode === stopNode || !(0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isElement)(parentNode) || (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isLastTraversableNode)(parentNode)) {
     return false;
   }
-  return getComputedStyle$1(parentNode).position === 'fixed' || hasFixedPositionAncestor(parentNode, stopNode);
+  return (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getComputedStyle)(parentNode).position === 'fixed' || hasFixedPositionAncestor(parentNode, stopNode);
 }
 
 // A "clipping ancestor" is an `overflow` element with the characteristic of
@@ -50509,19 +50336,19 @@ function getClippingElementAncestors(element, cache) {
   if (cachedResult) {
     return cachedResult;
   }
-  let result = getOverflowAncestors(element).filter(el => isElement(el) && getNodeName(el) !== 'body');
+  let result = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getOverflowAncestors)(element, [], false).filter(el => (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isElement)(el) && (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getNodeName)(el) !== 'body');
   let currentContainingBlockComputedStyle = null;
-  const elementIsFixed = getComputedStyle$1(element).position === 'fixed';
-  let currentNode = elementIsFixed ? getParentNode(element) : element;
+  const elementIsFixed = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getComputedStyle)(element).position === 'fixed';
+  let currentNode = elementIsFixed ? (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getParentNode)(element) : element;
 
   // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
-  while (isElement(currentNode) && !isLastTraversableNode(currentNode)) {
-    const computedStyle = getComputedStyle$1(currentNode);
-    const currentNodeIsContaining = isContainingBlock(currentNode);
+  while ((0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isElement)(currentNode) && !(0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isLastTraversableNode)(currentNode)) {
+    const computedStyle = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getComputedStyle)(currentNode);
+    const currentNodeIsContaining = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isContainingBlock)(currentNode);
     if (!currentNodeIsContaining && computedStyle.position === 'fixed') {
       currentContainingBlockComputedStyle = null;
     }
-    const shouldDropCurrentNode = elementIsFixed ? !currentNodeIsContaining && !currentContainingBlockComputedStyle : !currentNodeIsContaining && computedStyle.position === 'static' && !!currentContainingBlockComputedStyle && ['absolute', 'fixed'].includes(currentContainingBlockComputedStyle.position) || isOverflowElement(currentNode) && !currentNodeIsContaining && hasFixedPositionAncestor(element, currentNode);
+    const shouldDropCurrentNode = elementIsFixed ? !currentNodeIsContaining && !currentContainingBlockComputedStyle : !currentNodeIsContaining && computedStyle.position === 'static' && !!currentContainingBlockComputedStyle && ['absolute', 'fixed'].includes(currentContainingBlockComputedStyle.position) || (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isOverflowElement)(currentNode) && !currentNodeIsContaining && hasFixedPositionAncestor(element, currentNode);
     if (shouldDropCurrentNode) {
       // Drop non-containing blocks.
       result = result.filter(ancestor => ancestor !== currentNode);
@@ -50529,7 +50356,7 @@ function getClippingElementAncestors(element, cache) {
       // Record last containing block for next iteration.
       currentContainingBlockComputedStyle = computedStyle;
     }
-    currentNode = getParentNode(currentNode);
+    currentNode = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getParentNode)(currentNode);
   }
   cache.set(element, result);
   return result;
@@ -50549,10 +50376,10 @@ function getClippingRect(_ref) {
   const firstClippingAncestor = clippingAncestors[0];
   const clippingRect = clippingAncestors.reduce((accRect, clippingAncestor) => {
     const rect = getClientRectFromClippingAncestor(element, clippingAncestor, strategy);
-    accRect.top = max(rect.top, accRect.top);
-    accRect.right = min(rect.right, accRect.right);
-    accRect.bottom = min(rect.bottom, accRect.bottom);
-    accRect.left = max(rect.left, accRect.left);
+    accRect.top = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.max)(rect.top, accRect.top);
+    accRect.right = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.min)(rect.right, accRect.right);
+    accRect.bottom = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.min)(rect.bottom, accRect.bottom);
+    accRect.left = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.max)(rect.left, accRect.left);
     return accRect;
   }, getClientRectFromClippingAncestor(element, firstClippingAncestor, strategy));
   return {
@@ -50564,11 +50391,50 @@ function getClippingRect(_ref) {
 }
 
 function getDimensions(element) {
-  return getCssDimensions(element);
+  const {
+    width,
+    height
+  } = getCssDimensions(element);
+  return {
+    width,
+    height
+  };
+}
+
+function getRectRelativeToOffsetParent(element, offsetParent, strategy) {
+  const isOffsetParentAnElement = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isHTMLElement)(offsetParent);
+  const documentElement = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getDocumentElement)(offsetParent);
+  const isFixed = strategy === 'fixed';
+  const rect = getBoundingClientRect(element, true, isFixed, offsetParent);
+  let scroll = {
+    scrollLeft: 0,
+    scrollTop: 0
+  };
+  const offsets = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.createCoords)(0);
+  if (isOffsetParentAnElement || !isOffsetParentAnElement && !isFixed) {
+    if ((0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getNodeName)(offsetParent) !== 'body' || (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isOverflowElement)(documentElement)) {
+      scroll = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getNodeScroll)(offsetParent);
+    }
+    if (isOffsetParentAnElement) {
+      const offsetRect = getBoundingClientRect(offsetParent, true, isFixed, offsetParent);
+      offsets.x = offsetRect.x + offsetParent.clientLeft;
+      offsets.y = offsetRect.y + offsetParent.clientTop;
+    } else if (documentElement) {
+      offsets.x = getWindowScrollBarX(documentElement);
+    }
+  }
+  const x = rect.left + scroll.scrollLeft - offsets.x;
+  const y = rect.top + scroll.scrollTop - offsets.y;
+  return {
+    x,
+    y,
+    width: rect.width,
+    height: rect.height
+  };
 }
 
 function getTrueOffsetParent(element, polyfill) {
-  if (!isHTMLElement(element) || getComputedStyle$1(element).position === 'fixed') {
+  if (!(0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isHTMLElement)(element) || (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getComputedStyle)(element).position === 'fixed') {
     return null;
   }
   if (polyfill) {
@@ -50576,95 +50442,128 @@ function getTrueOffsetParent(element, polyfill) {
   }
   return element.offsetParent;
 }
-function getContainingBlock(element) {
-  let currentNode = getParentNode(element);
-  while (isHTMLElement(currentNode) && !isLastTraversableNode(currentNode)) {
-    if (isContainingBlock(currentNode)) {
-      return currentNode;
-    } else {
-      currentNode = getParentNode(currentNode);
-    }
-  }
-  return null;
-}
 
 // Gets the closest ancestor positioned element. Handles some edge cases,
 // such as table ancestors and cross browser bugs.
 function getOffsetParent(element, polyfill) {
-  const window = getWindow(element);
-  if (!isHTMLElement(element)) {
+  const window = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getWindow)(element);
+  if (!(0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isHTMLElement)(element) || isTopLayer(element)) {
     return window;
   }
   let offsetParent = getTrueOffsetParent(element, polyfill);
-  while (offsetParent && isTableElement(offsetParent) && getComputedStyle$1(offsetParent).position === 'static') {
+  while (offsetParent && (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isTableElement)(offsetParent) && (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getComputedStyle)(offsetParent).position === 'static') {
     offsetParent = getTrueOffsetParent(offsetParent, polyfill);
   }
-  if (offsetParent && (getNodeName(offsetParent) === 'html' || getNodeName(offsetParent) === 'body' && getComputedStyle$1(offsetParent).position === 'static' && !isContainingBlock(offsetParent))) {
+  if (offsetParent && ((0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getNodeName)(offsetParent) === 'html' || (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getNodeName)(offsetParent) === 'body' && (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getComputedStyle)(offsetParent).position === 'static' && !(0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isContainingBlock)(offsetParent))) {
     return window;
   }
-  return offsetParent || getContainingBlock(element) || window;
+  return offsetParent || (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getContainingBlock)(element) || window;
 }
 
-function getRectRelativeToOffsetParent(element, offsetParent, strategy) {
-  const isOffsetParentAnElement = isHTMLElement(offsetParent);
-  const documentElement = getDocumentElement(offsetParent);
-  const rect = getBoundingClientRect(element, true, strategy === 'fixed', offsetParent);
-  let scroll = {
-    scrollLeft: 0,
-    scrollTop: 0
-  };
-  const offsets = {
-    x: 0,
-    y: 0
-  };
-  if (isOffsetParentAnElement || !isOffsetParentAnElement && strategy !== 'fixed') {
-    if (getNodeName(offsetParent) !== 'body' || isOverflowElement(documentElement)) {
-      scroll = getNodeScroll(offsetParent);
-    }
-    if (isHTMLElement(offsetParent)) {
-      const offsetRect = getBoundingClientRect(offsetParent, true);
-      offsets.x = offsetRect.x + offsetParent.clientLeft;
-      offsets.y = offsetRect.y + offsetParent.clientTop;
-    } else if (documentElement) {
-      offsets.x = getWindowScrollBarX(documentElement);
-    }
-  }
+const getElementRects = async function (data) {
+  const getOffsetParentFn = this.getOffsetParent || getOffsetParent;
+  const getDimensionsFn = this.getDimensions;
   return {
-    x: rect.left + scroll.scrollLeft - offsets.x,
-    y: rect.top + scroll.scrollTop - offsets.y,
-    width: rect.width,
-    height: rect.height
+    reference: getRectRelativeToOffsetParent(data.reference, await getOffsetParentFn(data.floating), data.strategy),
+    floating: {
+      x: 0,
+      y: 0,
+      ...(await getDimensionsFn(data.floating))
+    }
   };
+};
+
+function isRTL(element) {
+  return (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getComputedStyle)(element).direction === 'rtl';
 }
 
 const platform = {
-  getClippingRect,
   convertOffsetParentRelativeRectToViewportRelativeRect,
-  isElement,
-  getDimensions,
+  getDocumentElement: _floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getDocumentElement,
+  getClippingRect,
   getOffsetParent,
-  getDocumentElement,
+  getElementRects,
+  getClientRects,
+  getDimensions,
   getScale,
-  async getElementRects(_ref) {
-    let {
-      reference,
-      floating,
-      strategy
-    } = _ref;
-    const getOffsetParentFn = this.getOffsetParent || getOffsetParent;
-    const getDimensionsFn = this.getDimensions;
-    return {
-      reference: getRectRelativeToOffsetParent(reference, await getOffsetParentFn(floating), strategy),
-      floating: {
-        x: 0,
-        y: 0,
-        ...(await getDimensionsFn(floating))
-      }
-    };
-  },
-  getClientRects: element => Array.from(element.getClientRects()),
-  isRTL: element => getComputedStyle$1(element).direction === 'rtl'
+  isElement: _floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.isElement,
+  isRTL
 };
+
+// https://samthor.au/2021/observing-dom/
+function observeMove(element, onMove) {
+  let io = null;
+  let timeoutId;
+  const root = (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getDocumentElement)(element);
+  function cleanup() {
+    var _io;
+    clearTimeout(timeoutId);
+    (_io = io) == null || _io.disconnect();
+    io = null;
+  }
+  function refresh(skip, threshold) {
+    if (skip === void 0) {
+      skip = false;
+    }
+    if (threshold === void 0) {
+      threshold = 1;
+    }
+    cleanup();
+    const {
+      left,
+      top,
+      width,
+      height
+    } = element.getBoundingClientRect();
+    if (!skip) {
+      onMove();
+    }
+    if (!width || !height) {
+      return;
+    }
+    const insetTop = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.floor)(top);
+    const insetRight = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.floor)(root.clientWidth - (left + width));
+    const insetBottom = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.floor)(root.clientHeight - (top + height));
+    const insetLeft = (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.floor)(left);
+    const rootMargin = -insetTop + "px " + -insetRight + "px " + -insetBottom + "px " + -insetLeft + "px";
+    const options = {
+      rootMargin,
+      threshold: (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.max)(0, (0,_floating_ui_utils__WEBPACK_IMPORTED_MODULE_2__.min)(1, threshold)) || 1
+    };
+    let isFirstUpdate = true;
+    function handleObserve(entries) {
+      const ratio = entries[0].intersectionRatio;
+      if (ratio !== threshold) {
+        if (!isFirstUpdate) {
+          return refresh();
+        }
+        if (!ratio) {
+          timeoutId = setTimeout(() => {
+            refresh(false, 1e-7);
+          }, 100);
+        } else {
+          refresh(false, ratio);
+        }
+      }
+      isFirstUpdate = false;
+    }
+
+    // Older browsers don't support a `document` as the root and will throw an
+    // error.
+    try {
+      io = new IntersectionObserver(handleObserve, {
+        ...options,
+        // Handle <iframe>s
+        root: root.ownerDocument
+      });
+    } catch (e) {
+      io = new IntersectionObserver(handleObserve, options);
+    }
+    io.observe(element);
+  }
+  refresh(true);
+  return cleanup;
+}
 
 /**
  * Automatically updates the position of the floating element when necessary.
@@ -50681,30 +50580,40 @@ function autoUpdate(reference, floating, update, options) {
   const {
     ancestorScroll = true,
     ancestorResize = true,
-    elementResize = true,
+    elementResize = typeof ResizeObserver === 'function',
+    layoutShift = typeof IntersectionObserver === 'function',
     animationFrame = false
   } = options;
-  const ancestors = ancestorScroll || ancestorResize ? [...(isElement(reference) ? getOverflowAncestors(reference) : reference.contextElement ? getOverflowAncestors(reference.contextElement) : []), ...getOverflowAncestors(floating)] : [];
+  const referenceEl = unwrapElement(reference);
+  const ancestors = ancestorScroll || ancestorResize ? [...(referenceEl ? (0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getOverflowAncestors)(referenceEl) : []), ...(0,_floating_ui_utils_dom__WEBPACK_IMPORTED_MODULE_1__.getOverflowAncestors)(floating)] : [];
   ancestors.forEach(ancestor => {
-    // ignores Window, checks for [object VisualViewport]
-    const isVisualViewport = !isElement(ancestor) && ancestor.toString().includes('V');
-    if (ancestorScroll && (animationFrame ? isVisualViewport : true)) {
-      ancestor.addEventListener('scroll', update, {
-        passive: true
-      });
-    }
+    ancestorScroll && ancestor.addEventListener('scroll', update, {
+      passive: true
+    });
     ancestorResize && ancestor.addEventListener('resize', update);
   });
-  let observer = null;
+  const cleanupIo = referenceEl && layoutShift ? observeMove(referenceEl, update) : null;
+  let reobserveFrame = -1;
+  let resizeObserver = null;
   if (elementResize) {
-    observer = new ResizeObserver(() => {
+    resizeObserver = new ResizeObserver(_ref => {
+      let [firstEntry] = _ref;
+      if (firstEntry && firstEntry.target === referenceEl && resizeObserver) {
+        // Prevent update loops when using the `size` middleware.
+        // https://github.com/floating-ui/floating-ui/issues/1740
+        resizeObserver.unobserve(floating);
+        cancelAnimationFrame(reobserveFrame);
+        reobserveFrame = requestAnimationFrame(() => {
+          var _resizeObserver;
+          (_resizeObserver = resizeObserver) == null || _resizeObserver.observe(floating);
+        });
+      }
       update();
     });
-    isElement(reference) && !animationFrame && observer.observe(reference);
-    if (!isElement(reference) && reference.contextElement && !animationFrame) {
-      observer.observe(reference.contextElement);
+    if (referenceEl && !animationFrame) {
+      resizeObserver.observe(referenceEl);
     }
-    observer.observe(floating);
+    resizeObserver.observe(floating);
   }
   let frameId;
   let prevRefRect = animationFrame ? getBoundingClientRect(reference) : null;
@@ -50721,13 +50630,14 @@ function autoUpdate(reference, floating, update, options) {
   }
   update();
   return () => {
-    var _observer;
+    var _resizeObserver2;
     ancestors.forEach(ancestor => {
       ancestorScroll && ancestor.removeEventListener('scroll', update);
       ancestorResize && ancestor.removeEventListener('resize', update);
     });
-    (_observer = observer) == null ? void 0 : _observer.disconnect();
-    observer = null;
+    cleanupIo == null || cleanupIo();
+    (_resizeObserver2 = resizeObserver) == null || _resizeObserver2.disconnect();
+    resizeObserver = null;
     if (animationFrame) {
       cancelAnimationFrame(frameId);
     }
@@ -50735,9 +50645,65 @@ function autoUpdate(reference, floating, update, options) {
 }
 
 /**
+ * Optimizes the visibility of the floating element by choosing the placement
+ * that has the most space available automatically, without needing to specify a
+ * preferred placement. Alternative to `flip`.
+ * @see https://floating-ui.com/docs/autoPlacement
+ */
+const autoPlacement = _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.autoPlacement;
+
+/**
+ * Optimizes the visibility of the floating element by shifting it in order to
+ * keep it in view when it will overflow the clipping boundary.
+ * @see https://floating-ui.com/docs/shift
+ */
+const shift = _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.shift;
+
+/**
+ * Optimizes the visibility of the floating element by flipping the `placement`
+ * in order to keep it in view when the preferred placement(s) will overflow the
+ * clipping boundary. Alternative to `autoPlacement`.
+ * @see https://floating-ui.com/docs/flip
+ */
+const flip = _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.flip;
+
+/**
+ * Provides data that allows you to change the size of the floating element —
+ * for instance, prevent it from overflowing the clipping boundary or match the
+ * width of the reference element.
+ * @see https://floating-ui.com/docs/size
+ */
+const size = _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.size;
+
+/**
+ * Provides data to hide the floating element in applicable situations, such as
+ * when it is not in the same clipping context as the reference element.
+ * @see https://floating-ui.com/docs/hide
+ */
+const hide = _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.hide;
+
+/**
+ * Provides data to position an inner element of the floating element so that it
+ * appears centered to the reference element.
+ * @see https://floating-ui.com/docs/arrow
+ */
+const arrow = _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.arrow;
+
+/**
+ * Provides improved positioning for inline reference elements that can span
+ * over multiple lines, such as hyperlinks or range selections.
+ * @see https://floating-ui.com/docs/inline
+ */
+const inline = _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.inline;
+
+/**
+ * Built-in `limiter` that will stop `shift()` at a certain point.
+ */
+const limitShift = _floating_ui_core__WEBPACK_IMPORTED_MODULE_0__.limitShift;
+
+/**
  * Computes the `x` and `y` coordinates that will place the floating element
- * next to a reference element when it is given a certain CSS positioning
- * strategy.
+ * next to a given reference element.
  */
 const computePosition = (reference, floating, options) => {
   // This caches the expensive `getClippingElementAncestors` function so that
@@ -50757,6 +50723,331 @@ const computePosition = (reference, floating, options) => {
     platform: platformWithCache
   });
 };
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs":
+/*!************************************************************************!*\
+  !*** ./node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs ***!
+  \************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getComputedStyle: () => (/* binding */ getComputedStyle),
+/* harmony export */   getContainingBlock: () => (/* binding */ getContainingBlock),
+/* harmony export */   getDocumentElement: () => (/* binding */ getDocumentElement),
+/* harmony export */   getNearestOverflowAncestor: () => (/* binding */ getNearestOverflowAncestor),
+/* harmony export */   getNodeName: () => (/* binding */ getNodeName),
+/* harmony export */   getNodeScroll: () => (/* binding */ getNodeScroll),
+/* harmony export */   getOverflowAncestors: () => (/* binding */ getOverflowAncestors),
+/* harmony export */   getParentNode: () => (/* binding */ getParentNode),
+/* harmony export */   getWindow: () => (/* binding */ getWindow),
+/* harmony export */   isContainingBlock: () => (/* binding */ isContainingBlock),
+/* harmony export */   isElement: () => (/* binding */ isElement),
+/* harmony export */   isHTMLElement: () => (/* binding */ isHTMLElement),
+/* harmony export */   isLastTraversableNode: () => (/* binding */ isLastTraversableNode),
+/* harmony export */   isNode: () => (/* binding */ isNode),
+/* harmony export */   isOverflowElement: () => (/* binding */ isOverflowElement),
+/* harmony export */   isShadowRoot: () => (/* binding */ isShadowRoot),
+/* harmony export */   isTableElement: () => (/* binding */ isTableElement),
+/* harmony export */   isWebKit: () => (/* binding */ isWebKit)
+/* harmony export */ });
+function getNodeName(node) {
+  if (isNode(node)) {
+    return (node.nodeName || '').toLowerCase();
+  }
+  // Mocked nodes in testing environments may not be instances of Node. By
+  // returning `#document` an infinite loop won't occur.
+  // https://github.com/floating-ui/floating-ui/issues/2317
+  return '#document';
+}
+function getWindow(node) {
+  var _node$ownerDocument;
+  return (node == null || (_node$ownerDocument = node.ownerDocument) == null ? void 0 : _node$ownerDocument.defaultView) || window;
+}
+function getDocumentElement(node) {
+  var _ref;
+  return (_ref = (isNode(node) ? node.ownerDocument : node.document) || window.document) == null ? void 0 : _ref.documentElement;
+}
+function isNode(value) {
+  return value instanceof Node || value instanceof getWindow(value).Node;
+}
+function isElement(value) {
+  return value instanceof Element || value instanceof getWindow(value).Element;
+}
+function isHTMLElement(value) {
+  return value instanceof HTMLElement || value instanceof getWindow(value).HTMLElement;
+}
+function isShadowRoot(value) {
+  // Browsers without `ShadowRoot` support.
+  if (typeof ShadowRoot === 'undefined') {
+    return false;
+  }
+  return value instanceof ShadowRoot || value instanceof getWindow(value).ShadowRoot;
+}
+function isOverflowElement(element) {
+  const {
+    overflow,
+    overflowX,
+    overflowY,
+    display
+  } = getComputedStyle(element);
+  return /auto|scroll|overlay|hidden|clip/.test(overflow + overflowY + overflowX) && !['inline', 'contents'].includes(display);
+}
+function isTableElement(element) {
+  return ['table', 'td', 'th'].includes(getNodeName(element));
+}
+function isContainingBlock(element) {
+  const webkit = isWebKit();
+  const css = getComputedStyle(element);
+
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
+  return css.transform !== 'none' || css.perspective !== 'none' || (css.containerType ? css.containerType !== 'normal' : false) || !webkit && (css.backdropFilter ? css.backdropFilter !== 'none' : false) || !webkit && (css.filter ? css.filter !== 'none' : false) || ['transform', 'perspective', 'filter'].some(value => (css.willChange || '').includes(value)) || ['paint', 'layout', 'strict', 'content'].some(value => (css.contain || '').includes(value));
+}
+function getContainingBlock(element) {
+  let currentNode = getParentNode(element);
+  while (isHTMLElement(currentNode) && !isLastTraversableNode(currentNode)) {
+    if (isContainingBlock(currentNode)) {
+      return currentNode;
+    } else {
+      currentNode = getParentNode(currentNode);
+    }
+  }
+  return null;
+}
+function isWebKit() {
+  if (typeof CSS === 'undefined' || !CSS.supports) return false;
+  return CSS.supports('-webkit-backdrop-filter', 'none');
+}
+function isLastTraversableNode(node) {
+  return ['html', 'body', '#document'].includes(getNodeName(node));
+}
+function getComputedStyle(element) {
+  return getWindow(element).getComputedStyle(element);
+}
+function getNodeScroll(element) {
+  if (isElement(element)) {
+    return {
+      scrollLeft: element.scrollLeft,
+      scrollTop: element.scrollTop
+    };
+  }
+  return {
+    scrollLeft: element.pageXOffset,
+    scrollTop: element.pageYOffset
+  };
+}
+function getParentNode(node) {
+  if (getNodeName(node) === 'html') {
+    return node;
+  }
+  const result =
+  // Step into the shadow DOM of the parent of a slotted node.
+  node.assignedSlot ||
+  // DOM Element detected.
+  node.parentNode ||
+  // ShadowRoot detected.
+  isShadowRoot(node) && node.host ||
+  // Fallback.
+  getDocumentElement(node);
+  return isShadowRoot(result) ? result.host : result;
+}
+function getNearestOverflowAncestor(node) {
+  const parentNode = getParentNode(node);
+  if (isLastTraversableNode(parentNode)) {
+    return node.ownerDocument ? node.ownerDocument.body : node.body;
+  }
+  if (isHTMLElement(parentNode) && isOverflowElement(parentNode)) {
+    return parentNode;
+  }
+  return getNearestOverflowAncestor(parentNode);
+}
+function getOverflowAncestors(node, list, traverseIframes) {
+  var _node$ownerDocument2;
+  if (list === void 0) {
+    list = [];
+  }
+  if (traverseIframes === void 0) {
+    traverseIframes = true;
+  }
+  const scrollableAncestor = getNearestOverflowAncestor(node);
+  const isBody = scrollableAncestor === ((_node$ownerDocument2 = node.ownerDocument) == null ? void 0 : _node$ownerDocument2.body);
+  const win = getWindow(scrollableAncestor);
+  if (isBody) {
+    return list.concat(win, win.visualViewport || [], isOverflowElement(scrollableAncestor) ? scrollableAncestor : [], win.frameElement && traverseIframes ? getOverflowAncestors(win.frameElement) : []);
+  }
+  return list.concat(scrollableAncestor, getOverflowAncestors(scrollableAncestor, [], traverseIframes));
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs":
+/*!********************************************************************!*\
+  !*** ./node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs ***!
+  \********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   alignments: () => (/* binding */ alignments),
+/* harmony export */   clamp: () => (/* binding */ clamp),
+/* harmony export */   createCoords: () => (/* binding */ createCoords),
+/* harmony export */   evaluate: () => (/* binding */ evaluate),
+/* harmony export */   expandPaddingObject: () => (/* binding */ expandPaddingObject),
+/* harmony export */   floor: () => (/* binding */ floor),
+/* harmony export */   getAlignment: () => (/* binding */ getAlignment),
+/* harmony export */   getAlignmentAxis: () => (/* binding */ getAlignmentAxis),
+/* harmony export */   getAlignmentSides: () => (/* binding */ getAlignmentSides),
+/* harmony export */   getAxisLength: () => (/* binding */ getAxisLength),
+/* harmony export */   getExpandedPlacements: () => (/* binding */ getExpandedPlacements),
+/* harmony export */   getOppositeAlignmentPlacement: () => (/* binding */ getOppositeAlignmentPlacement),
+/* harmony export */   getOppositeAxis: () => (/* binding */ getOppositeAxis),
+/* harmony export */   getOppositeAxisPlacements: () => (/* binding */ getOppositeAxisPlacements),
+/* harmony export */   getOppositePlacement: () => (/* binding */ getOppositePlacement),
+/* harmony export */   getPaddingObject: () => (/* binding */ getPaddingObject),
+/* harmony export */   getSide: () => (/* binding */ getSide),
+/* harmony export */   getSideAxis: () => (/* binding */ getSideAxis),
+/* harmony export */   max: () => (/* binding */ max),
+/* harmony export */   min: () => (/* binding */ min),
+/* harmony export */   placements: () => (/* binding */ placements),
+/* harmony export */   rectToClientRect: () => (/* binding */ rectToClientRect),
+/* harmony export */   round: () => (/* binding */ round),
+/* harmony export */   sides: () => (/* binding */ sides)
+/* harmony export */ });
+/**
+ * Custom positioning reference element.
+ * @see https://floating-ui.com/docs/virtual-elements
+ */
+
+const sides = ['top', 'right', 'bottom', 'left'];
+const alignments = ['start', 'end'];
+const placements = /*#__PURE__*/sides.reduce((acc, side) => acc.concat(side, side + "-" + alignments[0], side + "-" + alignments[1]), []);
+const min = Math.min;
+const max = Math.max;
+const round = Math.round;
+const floor = Math.floor;
+const createCoords = v => ({
+  x: v,
+  y: v
+});
+const oppositeSideMap = {
+  left: 'right',
+  right: 'left',
+  bottom: 'top',
+  top: 'bottom'
+};
+const oppositeAlignmentMap = {
+  start: 'end',
+  end: 'start'
+};
+function clamp(start, value, end) {
+  return max(start, min(value, end));
+}
+function evaluate(value, param) {
+  return typeof value === 'function' ? value(param) : value;
+}
+function getSide(placement) {
+  return placement.split('-')[0];
+}
+function getAlignment(placement) {
+  return placement.split('-')[1];
+}
+function getOppositeAxis(axis) {
+  return axis === 'x' ? 'y' : 'x';
+}
+function getAxisLength(axis) {
+  return axis === 'y' ? 'height' : 'width';
+}
+function getSideAxis(placement) {
+  return ['top', 'bottom'].includes(getSide(placement)) ? 'y' : 'x';
+}
+function getAlignmentAxis(placement) {
+  return getOppositeAxis(getSideAxis(placement));
+}
+function getAlignmentSides(placement, rects, rtl) {
+  if (rtl === void 0) {
+    rtl = false;
+  }
+  const alignment = getAlignment(placement);
+  const alignmentAxis = getAlignmentAxis(placement);
+  const length = getAxisLength(alignmentAxis);
+  let mainAlignmentSide = alignmentAxis === 'x' ? alignment === (rtl ? 'end' : 'start') ? 'right' : 'left' : alignment === 'start' ? 'bottom' : 'top';
+  if (rects.reference[length] > rects.floating[length]) {
+    mainAlignmentSide = getOppositePlacement(mainAlignmentSide);
+  }
+  return [mainAlignmentSide, getOppositePlacement(mainAlignmentSide)];
+}
+function getExpandedPlacements(placement) {
+  const oppositePlacement = getOppositePlacement(placement);
+  return [getOppositeAlignmentPlacement(placement), oppositePlacement, getOppositeAlignmentPlacement(oppositePlacement)];
+}
+function getOppositeAlignmentPlacement(placement) {
+  return placement.replace(/start|end/g, alignment => oppositeAlignmentMap[alignment]);
+}
+function getSideList(side, isStart, rtl) {
+  const lr = ['left', 'right'];
+  const rl = ['right', 'left'];
+  const tb = ['top', 'bottom'];
+  const bt = ['bottom', 'top'];
+  switch (side) {
+    case 'top':
+    case 'bottom':
+      if (rtl) return isStart ? rl : lr;
+      return isStart ? lr : rl;
+    case 'left':
+    case 'right':
+      return isStart ? tb : bt;
+    default:
+      return [];
+  }
+}
+function getOppositeAxisPlacements(placement, flipAlignment, direction, rtl) {
+  const alignment = getAlignment(placement);
+  let list = getSideList(getSide(placement), direction === 'start', rtl);
+  if (alignment) {
+    list = list.map(side => side + "-" + alignment);
+    if (flipAlignment) {
+      list = list.concat(list.map(getOppositeAlignmentPlacement));
+    }
+  }
+  return list;
+}
+function getOppositePlacement(placement) {
+  return placement.replace(/left|right|bottom|top/g, side => oppositeSideMap[side]);
+}
+function expandPaddingObject(padding) {
+  return {
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    ...padding
+  };
+}
+function getPaddingObject(padding) {
+  return typeof padding !== 'number' ? expandPaddingObject(padding) : {
+    top: padding,
+    right: padding,
+    bottom: padding,
+    left: padding
+  };
+}
+function rectToClientRect(rect) {
+  return {
+    ...rect,
+    top: rect.y,
+    left: rect.x,
+    right: rect.x + rect.width,
+    bottom: rect.y + rect.height
+  };
+}
 
 
 
